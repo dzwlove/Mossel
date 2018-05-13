@@ -1,0 +1,333 @@
+html body{
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+.mo_head {
+	width: 1920px;
+	height: 600px;
+}
+.mo_main{
+	position: relative;
+	width: 1322px;
+	height: 1078px;
+	margin: auto;
+	border: 1px solid #eee;
+}.mo_main .mo_d1{
+	width: 660px;
+	height: 538px;
+	width: 520px;
+    padding: 0 70px;
+	padding-top: 1px;
+	float: left;
+}
+.mo_main h2{
+	width: 520px;
+	font-size: 35px;
+    font-weight: 400;
+    color: #666;
+    margin: 70px auto 20px;
+}
+.mo_main h5{
+	width: 140px;
+    height: 3px;
+    background: #666;
+    margin-bottom: 40px;
+}
+.mo_main p{
+	font-size: 14px;
+	color: #333;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+}
+
+.mo_main .mo_d2{
+	width: 660px;
+	height: 538px;
+	position: absolute;
+	right: 0;
+}
+.mo_main .mo_d3{
+	width: 660px;
+	height: 538px;
+}
+.mo_main .mo_d4{
+	width: 590px;
+	height: 538px;
+	position: absolute;
+	right: 0;
+	padding-left: 70px;
+}
+.mo_main .mo_d5{
+	width: 660px;
+	height: 538px;
+	width: 520px;
+    padding: 0 70px;
+	padding-top: 1px;
+	float: left;
+	position: absolute;
+}
+.mo_main .mo_d5 h2{
+	width: 520px;
+	font-size: 35px;
+    font-weight: 400;
+    color: #666;
+    margin: 70px auto 20px;
+}
+.mo_main .mo_d5 h5{
+	width: 140px;
+    height: 3px;
+    background: #666;
+    margin-bottom: 40px;
+}
+.mo_main .mo_d5 p{
+	font-size: 14px;
+	color: #333;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+}
+
+.mo_main .mo_d6{
+	width: 660px;
+	height: 538px;
+	position: absolute;
+	right: 0;
+}
+.mo_main2{
+	position: relative;
+	width: 1322px;
+	height: 540px;
+	margin: auto;
+	border: 1px solid #eee;
+	border-bottom: none;
+}
+
+
+.mo_main2 .mo_d5{
+	width: 660px;
+	height: 538px;
+	width: 520px;
+    padding: 0 70px;
+	padding-top: 1px;
+	float: left;
+}
+.mo_main2 h2{
+	width: 520px;
+	font-size: 35px;
+    font-weight: 400;
+    color: #666;
+    margin: 70px auto 20px;
+}
+.mo_main2 h5{
+	width: 140px;
+    height: 3px;
+    background: #666;
+    margin-bottom: 40px;
+}
+.mo_main2 p{
+	font-size: 14px;
+	color: #333;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+}
+
+.mo_main2 .mo_d6{
+	width: 660px;
+	height: 538px;
+	right: 0;
+	float: right;
+	background-color: blue;
+}
+.main3{
+	width: 100%;
+	height: 500px;
+}
+
+/*lun*/
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 1080px;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.mo_lun{
+	left: 600px;
+	width: 1120px;
+	height: 800px;
+	/*background-color: pink;*/
+	position: absolute;
+	transition: all 2s; 
+}
+.mo_lun h2{
+	font-size: 45px;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+.mo_lun h5{
+	width: 140px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 160px;
+    left: 0;
+}.mo_lun p{
+	text-align: left;
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+.mo_title{
+	top: 20px;
+	left: 30%;
+	width: 385px;
+	height: 146px;
+	position: absolute;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+}
+.mo_title img{
+	width: 31px;
+	height: 30px;
+	position: absolute;
+	left: 70px;
+}.mo_title span{
+	margin-left: -100px;
+}
+.mo_title .mo_title_c{
+	border-radius: 10px;
+	margin: 15px 30px;
+	width: 457px;
+	height: 100px;
+	background-color: white;
+	color: #6b666b;
+	font-size: 14px;
+	opacity: 0;
+    transition: all 2s;
+}.mo_title .mo_title_c b{
+	margin-top: 15px;
+	text-align: left;
+	display: inline-block;
+}
+.mo_title:hover .mo_title_c{
+	opacity: 1;
+}
+
+/*222222*/
+.mo_lun .mo_title2{
+	top:580px;
+	left: 530px;
+	width: 385px;
+	height: 146px;
+	position: absolute;
+    font-size: 16px;
+    color: #fff;
+    /*background-color: lightblue;*/
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.mo_title2 img{
+	width: 31px;
+	height: 30px;
+	position: absolute;
+	left: 50px;
+}.mo_title2 span{
+	margin-left: -100px;
+}
+.mo_title2 .mo_title_c{
+	border-radius: 10px;
+	margin: 15px 30px;
+	width: 457px;
+	height: 100px;
+	background-color: white;
+	color: #6b666b;
+	font-size: 14px;
+	opacity: 0;
+    transition: all 2s;
+}.mo_title2 .mo_title_c b{
+	margin-top: 15px;
+	text-align: left;
+	display: inline-block;
+}
+.mo_title2:hover .mo_title_c{
+	opacity: 1;
+}
+
+/*3333333333333*/
+.mo_lun .mo_title3{
+	top:330px;
+	left: 680px;
+	width: 385px;
+	height: 146px;
+	position: absolute;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.mo_title3 img{
+	width: 31px;
+	height: 30px;
+	position: absolute;
+	left: 50px;
+}.mo_title3 span{
+	margin-left: -100px;
+}
+.mo_title3 .mo_title_c{
+	border-radius: 10px;
+	margin: 15px 30px;
+	width: 457px;
+	height: 100px;
+	background-color: white;
+	color: #6b666b;
+	font-size: 14px;
+	opacity: 0;
+    transition: all 2s;
+}.mo_title3 .mo_title_c b{
+	margin-top: 15px;
+	text-align: left;
+	display: inline-block;
+}
+.mo_title3:hover .mo_title_c{
+	opacity: 1;
+}
+.swiper-slide:hover .mo_lun{
+	left: 500px;
+}

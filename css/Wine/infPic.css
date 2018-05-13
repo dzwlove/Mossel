@@ -1,0 +1,17 @@
+
+/*图片详情样式   infPic*/
+
+.de_main_pic {
+	width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	/*图片贴合：*/
+	font-size: 0; 
+}
+
+.de_main_pic img{
+	margin: 0;
+	width: 1920px;
+	height: auto;
+}

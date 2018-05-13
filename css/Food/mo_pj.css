@@ -1,0 +1,30 @@
+html body{
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+.mo_pj_head {
+	width: 1920px;
+	height: 703px;
+}
+.mo_pj_main{
+	width: 1140px;
+	height: 770px;
+	margin: auto;
+}
+.mo_pj_main .mo_pj_fl{
+	width: 540px;
+	height: 589px;
+	float: left;
+	margin-top: 110px;
+}
+.mo_pj_main .mo_pj_fr{
+	width: 540px;
+	height: 589px;
+	float: right;
+	margin-top: 118px;
+}
+.mo_pj_main2{
+	width: 1920px;
+	height: 1597px;
+}

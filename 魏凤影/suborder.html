@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/Goods/suborder.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/less.css"/>
+		<script src="https://at.alicdn.com/t/font_637760_77g2ikn8s0qqia4i.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		
+		<!--提交订单-->
+		<div class="sub_order">
+			<div class="sub_pro">
+				<span>当前位置：</span>
+				<span>提交订单</span>
+			</div>
+			<span class="sub_address">确认收货地址</span>
+			<div class="sub_choice">
+				<ul>
+					<li>
+						<input type="radio" name="address" id="" value="江苏省 南京市 雨花台区 雨花街道 雨花西路258号 " />江苏省 南京市 雨花台区 雨花街道 雨花西路258号<br />
+					</li>
+					<li>
+						<input type="radio" name="address" id="" value="" />上海市松江区泗泾镇九干路168号丽德创业园蓝鸥科技<br />
+					</li>
+					<li>
+						<input type="radio" name="address" id="" value="" />上海市松江区泗泾镇九干路168号丽德创业园蓝鸥科技<br />
+					</li>
+					<li>
+						<input type="radio" name="address" id="" value="" />上海市松江区泗泾镇九干路168号丽德创业园蓝鸥科技<br />
+					</li>
+					<li>
+						<input type="radio" name="address" id="" value="" />上海市松江区泗泾镇九干路168号丽德创业园蓝鸥科技<br />
+					</li>
+					
+					
+					
+					
+				</ul>
+				
+			</div>
+			
+			<span class="confirm_order">确认订单信息</span>
+			<div class="sub_mune">
+					<div class="sub_mune_1">商品</div>
+					<div class="sub_mune_2">商品属性</div>
+					<div class="sub_mune_3">单价</div>
+					<div class="sub_mune_4">数量</div>
+					<div class="sub_mune_5">小计</div>
+			</div>
+			<div class="sub_info">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td class="info_url"><img src="../img/Goods/hw_big1.jpg"/></td>
+						<td class="info_attr">
+							<span class="attr">颜色分类：白色[珊瑚色]</span>
+							<span class="attr">尺码：均码</span>
+						</td>
+						<td class="info_price">80.00</td>
+						<td class="info_number">1</td>
+						<td class="info_total">80.00</td>
+						
+					</tr>
+				</table>
+				<div class="info_transport">
+					发送方式：&nbsp;&nbsp;普通配送 &nbsp;  快递 &nbsp; 免邮&nbsp;&nbsp;&nbsp;&nbsp; <span> 0.00</span>
+				</div>
+			</div>
+			
+			
+			<!--结算 提交-->
+			<div class="sub_wrap">
+				<p class="p1">付款：<span class="pay_mony">￥</span><span id="pay_buy">80.00</span></p>
+				<p class="p2">
+					<span>寄送至：</span>
+					<span id="pay_address">上海上海市松江区泗泾镇九干路168号丽德创业园蓝鸥科技</span>
+				</p>
+				<p class="p3">
+					<span>收货人：</span>
+					<span id="receiver">后付费hie</span>
+					<span id="receiver_tel">15554689512</span>
+				</p>
+			</div>
+			<button class="sub_order_btn">提交订单</button>
+		</div>
+		<!--是否提交订单-->
+		<div class="reconfirm">
+			<div class="repeat">
+				<span>是否确定提交订单</span>
+				<button class="ok">确定</button>
+				<button class="cancle">取消</button>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div id="footer"></div>
+		
+		
+		
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#header").load("../header.html");
+		$("#footer").load("../footer.html");
+		
+		
+		$(".sub_order_btn").on("click",function(){
+			$(".reconfirm").css("display","block");
+		})
+		$(".ok").on("click",function(){
+//			$.ajax({
+//				type:"post",
+//				url:"",
+//				async:true,
+//				success:function(data){
+//					if(data){
+//						
+//					}
+//				}
+//			});
+		})
+		
+		$(".cancle").on("click",function(){
+			$(".reconfirm").css("display","none");
+		})
+
+	</script>
+</html>

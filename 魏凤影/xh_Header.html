@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/Goods/xh_Header.css"/>
+	</head>
+	<body>
+		<header class="xh_head">
+			<div class="xh_main">
+				<h1>
+					<a href=""><img src="../img/Goods/luck_logo.png"/></a>
+				</h1>
+				<h2>
+					<a href="http://10.80.7.238:8020/project/xh_index.html?__hbt=1525946155027" class="xh_on">首页</a>
+					<a href="http://10.80.7.238:8020/project/xh_yiyin.html?__hbt=1525943755886">一饮一啄</a>
+					<a href="http://10.80.7.238:8020/project/xh_road.html?__hbt=1525946814708">on zhe load</a>
+					<a href="http://10.80.7.238:8020/project/xh_find.html?__hbt=1525957808791">发现</a>
+					<a href="http://10.80.7.238:8020/project/xh_person.html?__hbt=1525958090719">幸会人物</a>
+					<a href="http://10.80.7.238:8020/project/xh_record.html?__hbt=1525958352965">光影纪念</a>
+				</h2>
+				<p class="xh_gotop"></p>
+			</div>
+		</header>
+		
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/Goods/animation.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Goods/tween.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		var xhColor = document.querySelector(".xh_main h2 a");
+//		for(var i =0;i<xhColor.length;i++){
+//			xhColor.onclick = function(){
+//				xhColor[i].classList.add("xh_on");
+//				
+//			}
+//		}
+		
+		  // 返回顶部
+		  window.onscroll = function(){
+			var Top = document.body.scrollTop || document.documentElement.scrollTop;
+			if (Top > 150) {
+				$(".xh_gotop").css("display","block");
+			}
+			else{
+				$(".xh_gotop").css("display","none");
+			}
+		}
+		 $(".xh_gotop").on("click",function(){
+		 	Math.animation(document.documentElement.scrollTop,0,500,"Linear",function(value){
+					document.documentElement.scrollTop = value;
+				});
+		 })
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+//	    function goTop(){ 
+//	    	//文档向右 向下滑动的像素数
+//	        window.scrollBy(0,-100); 
+//	        scrolldelay = setTimeout('goTop()',10); 
+//	        var sTop = document.documentElement.scrollTop + document.body.scrollTop; 
+//	        if(sTop == 0){
+//	        	clearTimeout(scrolldelay);
+//	        } 
+//	    }
+
+		
+		
+	</script>
+</html>

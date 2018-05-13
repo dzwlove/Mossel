@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发现</title>
+		<link rel="stylesheet" type="text/css" href="../css/Goods/xh_find.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/less.css"/>
+		<script src="https://at.alicdn.com/t/font_637760_77g2ikn8s0qqia4i.js"></script>
+		<style type="text/css">
+			#xh_header h2 a:nth-child(4){
+				color: #e52142;;
+			}
+			#xh_header h2 a:nth-child(1){
+				color: #333;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="xh_header"></div>
+		
+		<!--body-->
+		<div id="xh_box">
+			<ul>
+				<li class="xh_pag1"></li>
+				<li class="xh_pag2">
+					<p class="xh_hover">
+						<a class="xh_a1" href="#pag3"><img src="../img/Goods/xhImg/xh_find1.png" alt="" /></a>
+						<a class="xh_a2" href="#pag4"><img src="../img/Goods/xhImg/xh_find2.png" alt="" /></a>
+						<a class="xh_a3" href="#pag5"><img src="../img/Goods/xhImg/xh_find3.png" alt="" /></a>
+					</p>
+				</li>
+				<li class="xh_pag3" id="pag3"></li>
+				<li class="xh_pag4" id="pag4"></li>
+				<li class="xh_pag5" id="pag5"></li>
+				<li class="xh_pag6"></li>
+				
+			</ul>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#xh_header").load("xh_Header.html");
+		
+		$(".xh_a1").hover(
+			function(){
+				$(".xh_a1 img").prop("src","img/xhImg/xh_find-1.png");
+			},
+			function(){
+				$(".xh_a1 img").prop("src","img/xhImg/xh_find1.png");
+			}
+		);
+		$(".xh_a2").hover(
+			function(){
+				$(".xh_a2 img").prop("src","img/xhImg/xh_find-2.png");
+			},
+			function(){
+				$(".xh_a2 img").prop("src","img/xhImg/xh_find2.png");
+			}
+		);
+		$(".xh_a3").hover(
+			function(){
+				$(".xh_a3 img").prop("src","img/xhImg/xh_find-3.png");
+			},
+			function(){
+				$(".xh_a3 img").prop("src","img/xhImg/xh_find3.png");
+			}
+		)
+		
+	</script>
+</html>

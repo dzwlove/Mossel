@@ -1,0 +1,98 @@
+.hw_login{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.7);
+}
+.login_pag{
+	width: 400px;
+	min-height: 280px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -200px;
+    margin-top: -216px;
+    padding: 30px 0;
+}
+i{
+	font-style: normal;
+    font-weight: 400;
+}
+.login_close{
+	width: 20px;
+    height: 20px;
+    line-height: 19px;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 23px;
+    color: #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+.login_close:hover{
+	color: #fff;
+    background: #d92a4b;
+}
+.hw_login h3{
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "微软雅黑"; 
+}
+.login_pag label{
+	display: block;
+    position: relative;
+    width: 277px;
+    margin: 0 auto 25px;
+}
+.login_pag input{
+	width: 275px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #eee;
+    text-indent: 12px;
+}
+.test{
+	display: inline-block;
+    width: 78px;
+    height: 32px;
+    padding-top: 16px;
+    background: #eee;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    right: -1px;
+   
+}
+#loginBtn{
+	font-size: 14px;
+	background: #d92a4b;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid #d92a4b;
+}
+#loginBtn:hover{
+	background: #cc214a;
+    color: #fff;
+}
+.login_pag p{
+	color: #999;
+    margin-top: 20px;
+}
+.login_pag p a{
+	color: #999;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "微软雅黑"; 
+}

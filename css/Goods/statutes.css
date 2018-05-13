@@ -1,0 +1,64 @@
+.agreement{
+	width: 100%;
+	background: #f4f4f4;
+}
+a{
+	text-decoration: none;
+}
+.agree_nav{
+	width: 1120px;
+	margin: 10px auto;
+    line-height: 2;
+    font: 400 14px/40px microsoft yahei;
+    color: #666;
+}
+.agree_nav a{
+	color: #666;
+}
+.now{
+	color: #999;
+}
+/*主要内容*/
+.agree_main{
+	/*width: 740px;*/
+	width: 1120px;
+	margin: 0 auto;
+}
+.agree_main_art{
+	width: 700px;
+    padding: 0 20px 50px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px;
+    background: #fff;
+    /*height: 1000px;*/
+}
+
+.agree_main_art h2{
+	margin: 0;
+	font-size: 28px;
+    color: #333;
+    padding: 20px 0 0 20px;
+    font-weight: 400;
+}
+.agree-date{
+	color: #999;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.agree_normal{
+	font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    padding: 0 20px;
+    margin: 0;
+}
+.title{
+	 text-indent: 2em;
+}
+.empty{
+	height: 31px;
+}

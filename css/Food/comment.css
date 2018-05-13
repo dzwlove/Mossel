@@ -1,0 +1,88 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}.c_wrap{
+	width: 100%;
+	height: 1080px;
+    background: #f4f4f4;
+    border: 1px solid transparent;
+    
+}
+.c_comment{
+	width: 1120px;
+	height: 973px;
+	margin: auto;
+	margin-top: 50px;
+}
+.c_comment ul{
+	margin: 0;
+	width: 1120px;
+	height: 973px;
+	padding-left: 0;
+	list-style: none;
+	
+}
+.c_comment ul li{
+	border: 0.5px solid transparent;
+	height: 124px;
+	margin-bottom: 5px;
+	background-color: white;
+	
+}
+.c_comment ul .c_title{
+	height: 199px;
+}
+.c_comment ul .c_title h4{
+	color: #d92a4b;
+    font-size: 20px;
+    font-family: Arial;
+    margin: 0 150px;
+    padding-top: 50px;
+}
+.c_comment ul .c_title h4 em{
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+}.c_comment ul .c_title p{
+	margin: 0 168px;
+}
+.c_comment ul .c_list1{
+	margin-top: 25px;
+	height: 48px;
+	line-height: 48px;
+}
+.c_comment ul .c_list1 img{
+	width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+ .c_wrap .c_comment ul .c_list1 i{
+   color: #333;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   width: 50px;
+}
+.c_comment ul .c_list1 .c_icon{
+	display: block;
+	width: 28px;
+	height: 27px;
+	float: right;
+	position: relative;
+	right: 80px;top: 15px;
+	background-image: url(../../img/Food/c_icon1.png);
+	background-position: 0 0;
+}
+.c_comment ul .c_list1 .c_icon:hover{
+	background-image: url(../../img/Food/c_icon2.png);
+	background-position: 0 0;
+}
+.c_comment ul .c_list2{
+	text-align: right;
+	font-size: 14px;
+	    color: #999;
+	    padding-right: 60px;
+}

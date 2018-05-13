@@ -1,0 +1,112 @@
+.registerContainer {
+  min-height: calc(100% - 148px);
+  box-sizing: border-box;
+}
+.registerContainer .registerHeader a {
+  display: block;
+  height: 263px;
+  background: url(../../img/Other/login_img/download.jpg) repeat-x;
+}
+.registerContainer .registerBody {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.registerContainer .registerBody img {
+  position: absolute;
+  top: -65px;
+  cursor: pointer;
+}
+.registerContainer .registerBody .registerForm {
+  margin-top: -70px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  min-height: 550px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  padding-top: 46px;
+}
+.registerContainer .registerBody .registerForm h2 {
+  font-weight: 400;
+  color: #333;
+  font-size: 21px;
+  text-align: center;
+  margin: 0;
+}
+.registerContainer .registerBody .registerForm h2 span {
+  font-size: 14px;
+  color: #999;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.registerContainer .registerBody .registerForm h2 span a {
+  color: #0563c3;
+  font-size: 14px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.registerContainer .registerBody .registerForm ul {
+  padding: 40px 228px 50px;
+  font-size: 12px;
+  margin: 0;
+}
+.registerContainer .registerBody .registerForm ul .form-item {
+  list-style-type: none;
+  height: 64px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+}
+.registerContainer .registerBody .registerForm ul .form-item span {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.registerContainer .registerBody .registerForm ul .form-item span input {
+  border: 1px solid #ddd;
+  line-height: 20px;
+  height: 20px;
+  padding: 12px 10px;
+  width: 318px;
+  font-size: 14px;
+  outline: none;
+}
+.registerContainer .registerBody .registerForm ul .form-item .tip{
+  height: 20px;
+  position: absolute;
+  bottom: -2px;
+  font-size: 12px;
+  width: 340px;
+  color: red;
+  padding-left: 10px;
+  display: none;
+}
+.registerContainer .registerBody .registerForm ul .form-item span .yzm {
+  width: 120px;
+}
+.registerContainer .registerBody .registerForm ul .form-item span span {
+  display: inline-block;
+  color: #0563c3;
+  font-size: 14px;
+}
+.registerContainer .registerBody .registerForm ul .form-item my-font {
+  font-size: 14px;
+  color: #0563c3;
+}
+.registerContainer .registerBody .registerForm ul .registerSubmit {
+  width: 100%;
+  background-color: #d92a4b;
+  border: none;
+  line-height: 3;
+  display: block;
+  font: 18px/52px microsoft yahei;
+  height: 52px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+#newfoot {
+  height: 148px;
+}
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,213 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	background: #f4f4f4;
+	width: 100%;
+	height: 100%;
+}
+.forget_header{
+	height: 170px;
+	background-color: pink;
+	background-image: url(../../img/Food/forget_header-bg.jpg);
+	background-repeat:repeat-x ;
+}
+.forget_header h1{
+	padding-top: 30px;
+    width: 800px;
+    margin: 0 auto;
+}.forget_wrap{
+	width: 800px;
+	height: 598px;
+	margin: 0 auto;
+	/*position: relative;*/
+}
+.forget_main{
+	margin-top: -70px;
+    margin-bottom: 50px;
+    min-height: 550px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    padding-top: 46px;
+    background-color: white;
+}
+.forget_main ul{
+	list-style-type: none;
+	padding: 0 34px;
+    margin: 10px 0;
+}
+.forget_main ul li{
+	width: 182px;
+    text-align: center;
+	height: 31px;
+    line-height: 31px;
+	float: left;
+}
+.f_num{
+	color: #ddd;
+	display: block;
+    height: 31px;
+    background:url(../../img/Food/forget_gou.png) -24px 0 no-repeat;
+    font: 700 18px/31px microsoft yahei;
+}.f_test{
+	color: #999;
+	display: block;
+    margin-top: 14px;
+    font-size: 14px;
+}
+.f_num4{
+	background-position: -24px -33px;
+    text-indent: -200em;
+    overflow: hidden;
+}.forget_main2{
+	width: 342px;
+	height: 265px;
+	margin: 110px auto;
+}
+
+.forget_main2 input{
+	width: 320px;
+	border: 1px solid #ddd;
+    line-height: 20px;
+    height: 20px;
+    padding: 12px 10px;
+    outline: none;
+    font-size: 14px;
+    margin-top: 20px;
+        /*outline: #6bb305 solid 1px;*/
+}
+.f_label{
+	height: 40px;
+	line-height: 40px;
+}
+.forget_main2 label{
+	color: red;
+	font-size: 14px;
+	display: none;
+}
+.forget_next{
+	width: 342px;
+	height: 52px;
+    background-color: #d92a4b;
+    border: none;
+    line-height: 52px;
+    font: 18px/52px microsoft yahei;
+    color: white;
+    outline: none;
+}
+
+.forget_main2 p{
+	text-align: center;
+	margin-top: 30px;
+}.forget_main2 p span{
+	font-size: 14px;
+	    color: #333;
+}.forget_main2 p a{
+	font-size: 14px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: #0563c3;
+}
+a{
+	text-decoration: none;
+}
+/*-------------*/
+.footer .footerBottom {
+	margin-top: 50px;
+  background-color: #000;
+}
+.footer .footerBottom .net-copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .footerBottom .net-copyright .links {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.footer .footerBottom .net-copyright .links a {
+  color: #999;
+  margin: 0 4px;
+  font-size: 14px;
+}
+.footer .footerBottom .net-copyright .links a:hover {
+  color: #d92a4b;
+}
+.footer .footerBottom .net-copyright p {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 6px 0;
+}
+.footer .footerBottom .net-copyright p a {
+  font-size: 14px;
+  color: #999;
+}
+.footer .footerBottom .net-copyright .gov-icon {
+  margin-top: 20px;
+}
+.footer .footerBottom .net-copyright .gov-icon a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: url(../../img/Food/download.png);
+}
+.footer .footerBottom .net-copyright .gov-icon .police {
+  background-position: 0 -120px;
+}
+.footer .footerBottom .net-copyright .gov-icon .icp {
+  background-position: 0 -80px;
+}
+.footer .footerBottom .net-copyright .gov-icon .aw {
+  background-position: 0 0;
+}
+.footer .footerBottom .net-copyright .gov-icon .gswj {
+  background-position: 0 -40px;
+}
+.f_red{
+	color: #d92a4b;
+}
+.f_green{
+	background-position: -24px -66px;
+    text-indent: -200em;
+    overflow: hidden;
+}
+
+.forget_win{
+	width: 342px;
+	height: 265px;
+	background-color: white;
+	border: 1px solid lightgray;
+	position: absolute;
+	top: 0;left: 0;right: 0;bottom: 0;
+	margin: auto;
+	border-radius: 15px;
+	font-family: "KaiTi";
+	box-shadow: 1px 1px 10px lightgray;
+}
+.forget_win p{
+	margin-top: 80px;
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+}.forget_win button{
+	font-family: "KaiTi";
+	color: white;
+	width: 80px;
+	height: 50px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 130px;
+	outline: none;
+	background-color: #e93654;
+	border-radius: 15px;
+}
+.forget_box{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	display: none;
+}

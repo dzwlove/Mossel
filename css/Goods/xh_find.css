@@ -1,0 +1,66 @@
+ul{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+ul li{
+	list-style: none;
+	width: 100%;
+}
+body{
+	margin: 0;
+	font-size: 0;
+}
+.xh_pag1{
+	width: 100%;
+	height: 503px;
+    background: url(../../img/Goods/xhImg/xh_find4.jpg) 50%;
+}
+.xh_pag2{
+	height: 364px;
+    background: url(../../img/Goods/xhImg/xh_find5.jpg) 50%;
+}
+.xh_hover{
+	width: 1200px;
+    height: 247px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+.xh_hover a{
+	width: 400px;
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
+}
+.xh_a1{
+	margin-left: -630px;
+}
+.xh_a2{
+	margin-left: -218px;
+}
+.xh_a3{
+	margin-left: 200px;
+}
+
+
+.xh_pag3{
+	height: 822px;
+    background: url(../../img/Goods/xhImg/xh_find6.jpg) 50%;
+}
+.xh_pag4{
+	height: 847px;
+    background: url(../../img/Goods/xhImg/xh_find7.jpg) 50%;
+}
+.xh_pag5{
+	height: 799px;
+    background: url(../../img/Goods/xhImg/xh_find8.jpg) 50%;
+    position: relative;
+}
+.xh_pag6{
+	height: 874px;
+    background: url(../../img/Goods/xhImg/xh_find9.jpg) 50%;
+}

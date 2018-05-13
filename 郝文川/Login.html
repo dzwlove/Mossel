@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/common/less.css">
+        <link rel="stylesheet" href="../css/Other/login.css">
+    </head>
+    <body>
+        <div class="loginHeader">
+            <div class="loginHeaderInner">
+                <a href="">
+                    <img src="https://www.huaweimossel.com/public/images/2e/3c/c6/1752e1dbe133f4ef2391b382d82f578b406fa0b3.png?1517277060#w" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="position_bottom">
+            <div class="loginBody">
+            <div class="loginBodyBg">
+                <div class="loginForm">
+                    <div class="loginTitle">
+                        <h2>登录</h2>
+                    </div>
+                    <span class="inputWrap">
+                        <input type="text" name="mes_userName" class="loginUsername" placeholder="用户名" autocomplete="off">
+                        <span class="Utip">用户名错误</span>
+                    </span>
+                    <span class="inputWrap">
+                        <input type="password" name="mes_password" class="loginPassword" placeholder="请输入密码">
+                        <span class="Utip">密码错误</span>
+                    </span>
+                    <span class="inputWrap">
+                        <input type="text" class="verifyCode" placeholder="请输入验证码" autocomplete="off">
+                        <span class="Code">
+                            <span class="code"></span>
+                            <span class="click" style="color: #0563c3;; cursor: pointer">看不清楚？换一个</span>
+                        </span>
+                        <span class="Utip">验证码错误</span>
+                    </span>
+                    <span class="loginAct">
+                        <input type="checkbox">记住用户名
+                        <a href="">忘记密码</a>
+                    </span>
+                    <button>登录</button>
+                    <div class="line"></div>
+                    <div class="register"><span>立即注册</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer" id="newfoot">
+            <div class="footerBottom">
+                <div class="net-copyright">
+                    <div class="links">
+                        <a href="">关于莫塞尔</a> | <a href="https://www.huaweimossel.com/delivery.html" target="_self">配送范围与运费</a> | <a href="https://www.kuaidi100.com/" target="_blank">快递查询</a> | <a href="https://www.huaweimossel.com/contact.html" target="_self">联系我们</a>
+                    </div>
+                    <p>copyright ©2018 华为技术有限公司版权所有 | <a href="">粤A2-20044005号-13</a></p>
+                    <div class="gov-icon">
+                        <a href="" class="police"></a>
+                        <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=lq4-7c9sVi_iIPctY2XZdSl0xEVPb9_BbBxZxnrgkD3u8MLQOX6b!270711513" class="icp" target="_blank"></a>
+                        <a href="http://61.144.227.239:9003/webrecord/_cert_result.jsp?bano=4403603020507" class="aw" target="_blank"></a>
+                        <a href="http://szcert.ebs.org.cn/b52b800a-a09a-4d1d-b5dd-f1d49a89a404" class="gswj" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var cha = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f",
+            "g","h","j","k","l","z","x","c","v","b","n","m","1","2","3","4","5","6","7","8","9"];
+        function randomIndex(length) {
+            let index = parseInt(Math.random()*length-1);
+            return index;
+        }
+
+        function getCode() {
+            let verifyCode = [];
+            while(verifyCode.length < 6){
+                let myindex = randomIndex(cha.length);
+                verifyCode.push(cha[myindex]);
+            }
+            return verifyCode.join("");
+        }
+
+        $(document).ready(function () {
+            $('.code').html(getCode());
+            $('.click').on('click',function () {
+                $('.code').html(getCode());
+            });
+        });
+
+        $('input').focus(function () {
+            $(this).css('border','#6bb305 solid 1px');
+        });
+        $('input').blur(function () {
+            $(this).css('border','1px solid #ddd');
+        });
+
+        $('button').on('click',function(){
+            let code = $(".Code .code").html();
+            if($('.verifyCode').val() === code){
+                $.ajax({
+                    url: 'http://10.80.7.200:8080/MosselMall/login.action',
+                    type: 'post',
+                    data: {
+                        mes_username: $('.loginUsername').val(),
+                        mes_password: $('.loginPassword').val()
+                    },
+                    async: false,
+                    // xhrFields:{
+                    //     withCredentials: true
+                    // },
+                    success: function(res){
+                        if(res === "用户名错误"){
+                            $('.loginUsername').siblings('.Utip').css('display','block');
+                        }else if(res === "密码错误"){
+                            $('.loginPassword').siblings('.Utip').css('display','block');
+                        }else if(res === "登陆成功"){
+                            alert("cg");
+                        }
+                    }
+                })
+                $(".Code").siblings('.Utip').css('display','none');
+            }else{
+                $(".Code").siblings('.Utip').css('display','block');
+            }
+        });
+    </script>
+</html>

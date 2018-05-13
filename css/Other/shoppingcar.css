@@ -1,0 +1,166 @@
+.shoppingcarBody {
+  min-height: calc(100% - 184px - 385px);
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+.shoppingcarBody .shoppingcarbread {
+  width: 1120px;
+  margin: 10px auto;
+  line-height: 2;
+  font: 400 14px/40px microsoft yahei;
+  color: #666;
+}
+.shoppingcarBody .shoppingcarbread span {
+  color: #999;
+  font-size: 14px;
+}
+.shoppingcarBody .shoppingcarSection {
+  width: 1120px;
+  margin: 0 auto 20px;
+  background-color: white;
+}
+.shoppingcarBody .shoppingcarSection form dl dt {
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.shoppingcarBody .shoppingcarSection form dl dt p {
+  margin: 0;
+  float: left;
+  width: 135px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.shoppingcarBody .shoppingcarSection form dl dt .p2 {
+  width: 445px;
+  text-align: left;
+}
+.shoppingcarBody .shoppingcarSection form dl dd {
+  line-height: 90px;
+  border-bottom: 1px solid #eee;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.shoppingcarBody .shoppingcarSection form dl dd p {
+  margin: 0;
+  float: left;
+  width: 135px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  position: relative;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p1 {
+  width: 115px;
+  text-align: left;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p1 svg {
+  margin-left: 22px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p2 {
+  width: 445px;
+  text-align: left;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p2 img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 15px 10px 15px 0;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p2 span {
+  line-height: 20px;
+  width: 375px;
+  height: 90px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 .SPnum {
+  width: 44px;
+  padding: 7px 0;
+  text-align: center;
+  border: 1px solid #a7a6ab;
+  font-size: 14px;
+  outline: none;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 span {
+  border: 1px #a7a6ab solid;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 95px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 span .icon {
+  position: absolute;
+  font-size: 12px;
+  left: 0;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 .SPup {
+  top: 28px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 .SPdown {
+  bottom: 29px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p4 .tips {
+  font-size: 12px;
+  color: red;
+  width: 100%;
+  font-style: normal;
+  position: absolute;
+  line-height: 15px;
+  left: 0;
+  bottom: 14px;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p5 {
+  color: #d92a4b;
+}
+.shoppingcarBody .shoppingcarSection form dl dd .p6 {
+  width: 115px;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay {
+  line-height: 54px;
+  padding: 20px 40px 20px 50px;
+  margin-top: -1px;
+  border-top: 1px solid #eee;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay .SPLeftGomore {
+  display: block;
+  line-height: 54px;
+  float: left;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay .SPLeftGomore .icon {
+  margin-top: 18px;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay a {
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay p {
+  float: right;
+  color: #d92a4b;
+  margin: 0 20px 0 0;
+  font-size: 14px;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay p span {
+  font-size: 30px;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay button {
+  background: #d92a4b;
+  border: 1px solid #d92a4b;
+  border-radius: 5px;
+  width: 170px;
+  line-height: 52px;
+  font-size: 16px;
+  color: white;
+  float: right;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+.shoppingcarBody .shoppingcarSection form .SPgopay .buttonDisabled {
+  background: #888888;
+  border: 1px solid #888888;
+}
+/*# sourceMappingURL=shoppingcar.css.map */

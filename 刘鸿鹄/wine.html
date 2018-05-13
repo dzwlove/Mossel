@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>美酒</title>
+		<link rel="stylesheet" type="text/css" href="../css/Wine/wine.css" />
+        <link rel="stylesheet" type="text/css" href="../css/common/less.css"/>
+        <script src="https://at.alicdn.com/t/font_637760_77g2ikn8s0qqia4i.js"></script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<!-------->
+		<div id="wineContainer">
+			<div id="wineTop">
+				<img src="../img/Wine/wineTop.jpg" alt="" />
+			</div>
+			<div id="wineContent">
+				<!--过滤器-->
+				<div id="filterSelect">
+					<!--过滤器已选项-->
+					<div id="filterSelected"></div>
+					<div id="filterLists">
+						<!--过滤器： 国家-->
+						<dl class="filterList countries">
+							<dt class="filterLable">国家：</dt>
+							<dd class="filterValue">
+								<span class="rSelected"><a class="filterAll">全部</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">法国</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">智利</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">阿根廷</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">西班牙</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">葡萄牙</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">南非</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">德国</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">意大利</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">美国</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">中国</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">澳大利亚</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">新西兰</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">格鲁吉亚</a></span>
+							</dd>
+						</dl>
+						<!--过滤器： 类型-->
+						<dl class="filterList types">
+							<dt class="filterLable">类型：</dt>
+							<dd class="filterValue">
+								<span class="rSelected">
+									<a class="filterAll">全部</a>
+								</span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">红葡萄酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">白葡萄酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">桃红酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">起泡酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">加强型葡萄酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">白酒</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">贵腐酒</a></span>
+							</dd>
+						</dl>
+						<!--过滤器： 其他-->
+						<dl class="filterList others">
+							<dt class="filterLable">其他：</dt>
+							<dd class="filterValue">
+								<span class="rSelected"><a class="filterAll">全部</a></span>
+							</dd>
+							<dd class="filterValue">
+								<span><a class="filterHandle">组合优惠</a></span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!--排序规则-->
+				<div id="proSort">
+					<ul>
+						<li><em>综合</em></li>
+						<li>
+							<em>价格</em>
+							<em class="desc">⬇</em>
+							<em class="asc">⬆</em>
+						</li>
+						<li>
+							<em>销量</em>
+							<em class="desc">⬇</em>
+							<em class="asc">⬆</em>
+						</li>
+					</ul>
+				</div>
+				<!--卡片主体-->
+				<div id="showList">
+					<ul>
+						<li class="inf_test">
+							<input type="hidden" class="wine_id" value="" />
+							<div class="pic pic1">
+								<a href="wineBuyType1.html"><img src="../img/Wine/wineMaotai1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS1 picSelected">
+									<img src="../img/Wine/wineMaotaimini1.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a class="wine_tit">15年飞天茅台酒53度 500ml</a>
+								<p class="wine_desc">礼遇高端 盛世茅台</p>
+								<p>
+									<i class="wine_pri">4799</i> 元&nbsp;库存紧张
+								</p>
+							</div>
+							<div class="notice">
+								<a href="">到货通知</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic2">
+								<a href="wineBuy.html"><img src="../img/Wine/wineShenliezhe1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS2 picSelected">
+									<img src="../img/Wine/wineShenliezhemini1.jpg" alt="" />
+								</div>
+								<div class="picS2">
+									<img src="../img/Wine/wineShenliezhemini2.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html">神猎者 阿根廷朗瑟赤霞珠干红葡萄酒 750ml</a>
+								<p>阿根廷前总统指定御用，人工采摘</p>
+								<p>
+									<i>816</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic3">
+								<a href="wineBuy.html"><img src="../img/Wine/wineLiaowangzhe1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS3 picSelected">
+									<img src="../img/Wine/wineLiaomini1.jpg" alt="" />
+								</div>
+								<div class="picS3">
+									<img src="../img/Wine/wineLiaomini2.jpg" alt="" />
+								</div>
+								<div class="picS3">
+									<img src="../img/Wine/wineLiaomini3.jpg" alt="" />
+								</div>
+								<div class="picS3">
+									<img src="../img/Wine/wineLiaomini4.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html">瞭望者 法国普罗旺斯桃红葡萄酒 750ml</a>
+								<p>桃红葡萄酒顶级产区——普罗旺斯，口感优雅浪漫</p>
+								<p>
+									<i>860</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic4">
+								<a href="wineBuy.html"><img src="../img/Wine/wineShelazi1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS4 picSelected">
+									<img src="../img/Wine/wineShemini1.jpg" alt="" />
+								</div>
+								<div class="picS4">
+									<img src="../img/Wine/wineShemini2.jpg" alt="" />
+								</div>
+								<div class="picS4">
+									<img src="../img/Wine/wineShemini3.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html"> 马丁小车 澳大利亚 设拉子红葡萄酒 750ml</a>
+								<p>澳大利亚明星品种</p>
+								<p>
+									<i>588</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+						<!--下面都是假的-->
+						<li>
+							<div class="pic pic5">
+								<a href="wineBuy.html"><img src="../img/Wine/wineMaotai1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS5 picSelected">
+									<img src="../img/Wine/wineMaotaimini1.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html">15年飞天茅台酒53度 500ml</a>
+								<p>礼遇高端 盛世茅台</p>
+								<p>
+									<i>4799</i> 元&nbsp;库存紧张
+								</p>
+							</div>
+							<div class="notice">
+								<a href="">到货通知</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic6">
+								<a href="wineBuy.html"><img src="../img/Wine/wineShenliezhe1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS6 picSelected">
+									<img src="../img/Wine/wineShenliezhemini1.jpg" alt="" />
+								</div>
+								<div class="picS6">
+									<img src="../img/Wine/wineShenliezhemini2.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html">神猎者 阿根廷朗瑟赤霞珠干红葡萄酒 750ml</a>
+								<p>阿根廷前总统指定御用，人工采摘</p>
+								<p>
+									<i>816</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic7">
+								<a href="wineBuy.html"><img src="../img/Wine/wineLiaowangzhe1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS7 picSelected">
+									<img src="../img/Wine/wineLiaomini1.jpg" alt="" />
+								</div>
+								<div class="picS7">
+									<img src="../img/Wine/wineLiaomini2.jpg" alt="" />
+								</div>
+								<div class="picS7">
+									<img src="../img/Wine/wineLiaomini3.jpg" alt="" />
+								</div>
+								<div class="picS7">
+									<img src="../img/Wine/wineLiaomini4.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html">瞭望者 法国普罗旺斯桃红葡萄酒 750ml</a>
+								<p>桃红葡萄酒顶级产区——普罗旺斯，口感优雅浪漫</p>
+								<p>
+									<i>860</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic pic8">
+								<a href="wineBuy.html"><img src="../img/Wine/wineShelazi1.jpg" /></a>
+							</div>
+							<div class="picSmall">
+								<div class="picS8 picSelected">
+									<img src="../img/Wine/wineShemini1.jpg" alt="" />
+								</div>
+								<div class="picS8">
+									<img src="../img/Wine/wineShemini2.jpg" alt="" />
+								</div>
+								<div class="picS8">
+									<img src="../img/Wine/wineShemini3.jpg" alt="" />
+								</div>
+								<!--...-->
+							</div>
+							<div class="inf">
+								<a href="wineBuy.html"> 马丁小车 澳大利亚 设拉子红葡萄酒 750ml</a>
+								<p>澳大利亚明星品种</p>
+								<p>
+									<i>588</i>元
+								</p>
+							</div>
+							<div class="joinCar">
+								<a href="">加入购物车</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--nomore-->
+				<p class="noMore">没有更多</p>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<div id="sidebar"></div>
+	</body>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/Wine/winecommon.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/Wine/wine.js" type="text/javascript" charset="utf-8"></script>
+</html>

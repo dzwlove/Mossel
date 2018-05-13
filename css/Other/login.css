@@ -1,0 +1,145 @@
+.loginHeader {
+  background-color: white;
+}
+.loginHeader .loginHeaderInner {
+  width: 1200px;
+  margin: 10px auto 0;
+}
+.position_bottom {
+  min-height: calc(100% - 81px - 148px);
+  box-sizing: border-box;
+}
+.position_bottom .loginBody {
+  background: #eb424c;
+  height: 500px;
+  min-height: 100%;
+}
+.position_bottom .loginBody .loginBodyBg {
+  width: 1120px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background: url("../../img/Other/login_img/bg.jpg") no-repeat;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm {
+  width: 400px;
+  float: right;
+  background-color: #f9f9f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #666;
+  box-shadow: 0 5px 5px #ddd;
+  border: 0;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .loginTitle {
+  border-bottom: 1px solid #eee;
+  height: 0;
+  padding-bottom: 20px;
+  margin: 0 30px 24px;
+  text-align: center;
+  padding-left: 0;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .loginTitle h2 {
+  margin: 0;
+  display: inline-block;
+  font: 700 20px/40px microsoft yahei;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #f9f9f9;
+  vertical-align: top;
+  zoom: 1;
+  color: black;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap {
+  display: block;
+  margin-bottom: 28px;
+  position: relative;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .loginUsername,
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .loginPassword,
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .verifyCode {
+  border: 1px solid #ddd;
+  line-height: 20px;
+  height: 20px;
+  padding: 12px 10px;
+  width: 318px;
+  font-size: 14px;
+  outline: none;
+  position: relative;
+  left: 30px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .Utip{
+  font-size: 14px;
+  color: red;
+  width: 340px;
+  height: 28px;
+  line-height: 28px;
+  bottom: -28px;
+  left: 45px;
+  position: absolute;
+  display: none;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .verifyCode {
+  width: 120px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .Code {
+  float: right;
+  margin-right: 30px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .inputWrap .Code span {
+  margin-left: 10px;
+  line-height: 46px;
+  font-size: 14px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .loginAct {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding-left: 30px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .loginAct input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .loginAct a {
+  float: right;
+  font-size: 14px;
+  color: #0563c3;
+  margin-right: 30px;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm button {
+  width: 340px;
+  background-color: #d92a4b;
+  border: none;
+  line-height: 3;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  outline: none;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .line {
+  border-bottom: 1px solid #eee;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .register {
+  padding: 30px 29px 0;
+  border-top: 1px solid #eee;
+  outline: none;
+}
+.position_bottom .loginBody .loginBodyBg .loginForm .register span {
+  display: block;
+  font: 16px/52px microsoft yahei;
+  height: 52px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+#newfoot {
+  height: 148px;
+}
+/*# sourceMappingURL=login.css.map */

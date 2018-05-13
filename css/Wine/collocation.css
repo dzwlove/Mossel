@@ -1,0 +1,138 @@
+
+/*搭配推荐样式  collocation*/
+
+.food_info_main_list li{
+	display: inline-block;
+    vertical-align: middle;
+}
+.food_info_main_list a{
+	display: block;
+	width: 230px;
+	/*单行文本超出显示省略号*/
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.food_info_main_list img{
+	margin-left: 25px;
+}
+
+.food_info_main1{
+	position: relative;
+	width: 1120px;
+	height: 324px;
+	margin: auto;
+}
+.food_info_main1 h2{
+	color: #333;
+    padding-left: 14px;
+    font-size: 18px;
+    height: 32px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.food_info_main_list{
+	width: 1120px;
+	height: 292px;
+	border: 1px solid #eee;
+	margin-top: -30px;
+}
+.food_info_main_list ul{
+	height: 250px;
+	padding-left: 0;
+	list-style-type: none;
+	margin-left: 90px;
+	/*margin-top: -30px;*/
+}
+.food_info_main_list ul li{
+	width: 230px;
+	height: 247px;
+	margin-right: 10px;
+	float: left;
+}
+.food_info_main_list img{
+	width: 180px;
+	height: 180px;
+}
+.food_info_main_list a{
+	color: #333;
+	text-decoration: none;
+}.food_info_main_list .lipin{
+	margin-top: 5px;
+	margin-bottom: 0;
+	text-align: center;
+}.food_info_main_list span{
+	font-size: 14px;
+	color: red;
+}
+.lipin1:hover a{
+	color: red;
+}
+.food_info_listr{
+	width: 241px;
+	height: 290px;
+	border-left: 1px solid #eee;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.food_info_list_info{
+	width: 200px;
+	height: 45px;
+	margin-left: 40px;
+	margin-top: 80px;
+}.food_info_list_info p{
+	margin: 0;
+	color: red;
+}
+.food_info_list_info p:first-child{
+	color: black;
+	font-size: 14px;
+}
+.food_info_btnred{
+	width: 170px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 30px;
+    background: #d92a4b;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid #d92a4b;
+    margin-left: 40px;
+}.food_info_btnred:hover{
+	background: #cc214a;
+    color: #fff;
+}
+.shadow{
+	position: relative;
+	top: -308px;
+	left: 830px;
+	box-shadow: 0 0 5px #ddd;
+	width: 352px;
+	height: 101px;
+	display: none;
+}
+.shadow_clear{
+	background: #eee;
+    height: 30px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 30px;
+}
+.shadow span{
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 20px;
+	color: #666;
+}
+.shadow .sure{
+	background-color: red;
+	font-size: 14px;
+	color: white;
+	width: 55px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin-left: 20px;
+}

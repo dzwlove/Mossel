@@ -1,0 +1,37 @@
+html body{
+	padding: 0;
+	margin: 0;
+	/*background-color: #f4f4f4;*/
+}
+.mo_pj_head {
+	width: 1920px;
+	height: 370px;
+}
+.mo_4_main1{
+	height: 356px;
+	text-align: center;
+	padding-top: 80px;
+}
+.mo_4_main2{
+	margin-top: -30px;
+	height: 1315px;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+.mo_4_main2 img{
+	width: 1220px;
+	height: 1149px;
+	margin-top: 80px;
+}.mo_4_main3{
+	height: 2206px;
+	text-align: center;
+}
+.mo_4_main3 .mo_4-main3_1{
+	padding-top: 80px;
+	width: 1195px;
+	height: 558px;
+}.mo_4_main3 .mo_4-main3_2{
+	padding-top: 80px;
+	width: 1149px;
+	height: 1406px;
+}

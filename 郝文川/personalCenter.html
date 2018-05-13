@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/Other/personalcenter.css">
+        <link rel="stylesheet" href="../css/common/less.css">
+        <script src="https://at.alicdn.com/t/font_637760_77g2ikn8s0qqia4i.js"></script>
+    </head>
+    <body>
+        <!---->
+        <div id="header"></div>
+
+        <!--个人中心-->
+        <div class="personCenter">
+            <div class="PCbread">
+                您当前的位置：<span class="now">个人中心</span>
+            </div>
+            <div class="PCsection">
+                <div class="block"></div>
+                <ul class="PCleft">
+                    <li>我的信息</li>
+                    <li>我的订单</li>
+                    <li>我的收货地址</li>
+                </ul>
+                <div class="PCright">
+                   <div class="PCmyinfo PCsel">
+                        <p>我的信息</p>
+                        <div class="PCmycount">
+                            <span>
+                                <label for="PCusername">我的账号</label>
+                                <input type="text" id="PCusername" readonly value="hwc">
+                            </span>
+                            <span>
+                                <label for="PCemail">我的邮箱</label>
+                                <input type="text" id="PCemail" readonly value="hwcsadasd@qq.com">
+                            </span>
+                        </div>
+                        <p>更改密码</p>
+                        <div class="PCmycount updatepsd">
+                            <span>
+                                <label for="PColdpsw">当前密码</label>
+                                <input type="password" id="PColdpsw">
+                            </span>
+                            <span>
+                                <label for="PCnewpsw1">新的密码</label>
+                                <input type="password" id="PCnewpsw1">
+                            </span>
+                            <span>
+                                <label for="PCnewpsw2">再次输入</label>
+                                <input type="password" id="PCnewpsw2">
+                            </span>
+                            <span>
+                                <i id="update">更新密码</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="PCmydinner PCsel">
+                        <ul class="sel">
+                            <li>待支付</li>
+                            <li>待发货</li>
+                            <li>待收货</li>
+                            <li>全部</li>
+                            <div style="clear: both;"></div>
+                        </ul>
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <span id="time">2017-8-32 22:12:34</span>
+                                    <span id="number">订单号：<i>2432423423423423423</i></span>
+                                    <span id="name">收货人：<i>郝文川</i></span>
+                                    <span id="money">订单金额：<i>456元</i></span>
+                                </li>
+                                <dl>
+                                    <dd>
+                                        <p class="p1">
+                                            <img src="../img/Login/login_img/bg.jpg" alt="">
+                                            <span>sadadda</span>
+                                        </p>
+                                        <p class="p2">
+                                            x4
+                                        </p>
+                                        <p class="p3">
+                                            <a href="">待支付</a>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="PCaddress PCsel">
+                        <p>更改收货地址</p>
+                        <div class="PCmycount updateAddress">
+                            <span>
+                                <span>
+                                    上海上海市松江区泗泾镇九干路蓝鸥科技前台 郝文川 13611111111
+                                </span>
+                                <em>
+                                    修改地址
+                                </em>
+                            </span>
+                        </div>
+                        <p>新增收货地址</p>
+                        <div class="PCadfirst">
+                            <span>收货人</span>
+                            <input type="text" placeholder="请填写您的真实姓名">
+                            <span>手机号码</span>
+                            <input type="text">
+                        </div>
+                        <div class="PCsecond">
+                            <span>地区选择</span>
+                            <div class="wrap">
+                                <input class="input" value="" id="city" type="text" placeholder="请选择" autocomplete="off" readonly="true"/>
+                            </div>   
+                        </div>
+                        <div class="PCpath">
+                            <span>详细地址</span>
+                            <input type="text" autocomplete="off" placeholder="详细的街道信息">
+                        </div>
+                        <div class="PCbutton">
+                            <span>保存地址</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--尾部-->
+        <div id="footer"></div>
+
+        <!--侧边栏-->
+        <div id="sidebar"></div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/Personalcenter/Popt.js"></script>
+    <script type="text/javascript" src="../js/Personalcenter/city.json.js"></script>
+    <script type="text/javascript" src="../js/Personalcenter/citySet.js"></script>
+    <script>
+        $('#header').load('../header.html');
+        $('#footer').load('../footer.html');
+        $('#sidebar').load('../sidebar.html');
+        // 
+        $('.PCleft li').on('click', function () {
+            let index = $(this).index();
+            if(index == 0){
+                $(this).css('color','#d92a4b').siblings('li').css('color','#666');
+                $('.PCmyinfo').css('display','block').siblings('.PCmydinner').css('display','none').siblings('.PCaddress').css('display','none');
+            }else if(index == 1){
+                $(this).css('color','#d92a4b').siblings('li').css('color','#666');
+                $('.PCmyinfo').css('display','none').siblings('.PCmydinner').css('display','block').siblings('.PCaddress').css('display','none');
+            }else{
+                $(this).css('color','#d92a4b').siblings('li').css('color','#666');
+                $('.PCmyinfo').css('display','none').siblings('.PCmydinner').css('display','none').siblings('.PCaddress').css('display','block');
+            }
+        });
+
+        $("#city").click(function (e) {
+            SelCity(this,e);
+        });
+        $("s").click(function (e) {
+            SelCity(document.getElementById("city"),e);
+        });
+
+
+
+    </script>
+</html>

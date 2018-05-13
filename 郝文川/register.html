@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/common/less.css">
+        <link rel="stylesheet" href="../css/Other/register.css">
+    </head>
+    <body>
+        <div class="registerContainer">
+            <div class="registerHeader">
+                <a href=""></a>
+            </div>
+            <div class="registerBody">
+                <img src="https://www.huaweimossel.com/themes/mossel/images/logo-white.png" alt="">
+                <div class="registerForm">
+                    <h2>注册莫塞尔账号<span>如已有账号，请<a href="">登录</a></span></h2>
+                    <ul>
+                        <li class="form-item">
+                            <span>
+                                <input type="text" name="mes_username" class="username iserror" placeholder="请输入用户名,4-16位字母数字" autocomplete="off">
+                            </span>
+                            <div class="tip">用户名已存在</div>
+                        </li>
+                        <li class="form-item"><span><input type="password" name="mes_password" class="password iserror" placeholder="请输入密码,6-20个字符"></span></li>
+                        <li class="form-item"><span><input type="password" name="mes_Password2" class="password2" placeholder="再次输入密码"></span></li>
+                        <!-- <li class="form-item"><span><input type="text" placeholder="输入验证码" autocomplete="off" class="yzm"><img
+                                src="" alt=""><span>看不清楚？换一个</span></span></li> -->
+                        <li class="form-item"><span><input type="text" name="mes_email" class="email iserror" placeholder="输入邮件"></span></li>
+                        <li class="form-item"><input type="checkbox" style="margin-right: 5px;" class="checked" checked="checked">我已阅读并同意<my-font>会员注册协议</my-font>和<my-font>隐私保护政策</my-font></li>
+                        <button class="registerSubmit">注册</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="newfoot">
+            <div class="footerBottom">
+                <div class="net-copyright">
+                    <div class="links">
+                        <a href="">关于莫塞尔</a> | <a href="https://www.huaweimossel.com/delivery.html" target="_self">配送范围与运费</a> | <a href="https://www.kuaidi100.com/" target="_blank">快递查询</a> | <a href="https://www.huaweimossel.com/contact.html" target="_self">联系我们</a>
+                    </div>
+                    <p>copyright ©2018 华为技术有限公司版权所有 | <a href="">粤A2-20044005号-13</a></p>
+                    <div class="gov-icon">
+                        <a href="" class="police"></a>
+                        <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=lq4-7c9sVi_iIPctY2XZdSl0xEVPb9_BbBxZxnrgkD3u8MLQOX6b!270711513" class="icp" target="_blank"></a>
+                        <a href="http://61.144.227.239:9003/webrecord/_cert_result.jsp?bano=4403603020507" class="aw" target="_blank"></a>
+                        <a href="http://szcert.ebs.org.cn/b52b800a-a09a-4d1d-b5dd-f1d49a89a404" class="gswj" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('input').focus(function () {
+            $(this).css('border','#6bb305 solid 1px');
+        });
+
+        var uReg = /^[a-zA-Z0-9]{4,16}$/;
+        $('.username').blur(function(){
+            if(uReg.test($(this).val())){
+                $.ajax({
+                    url: 'http://10.80.7.200:8080/MosselMall/selectByName.action',
+                    type: 'post',
+                    data: {
+                        mes_username: $(this).val()
+                    },
+                    async: true,
+                    success: function(res){
+                        if(res === "存在"){
+                            $('.username').css('border','1px solid #d92a4b').addClass('iserror').parent('span').siblings('.tip').css('display','block');
+                        }else if(res === "不存在"){
+                            $('.username').css('border','1px solid #ddd').removeClass('iserror').parent('span').siblings('.tip').css('display','none');
+                        }
+                    }
+                })
+            }else{
+                $(this).css('border','1px solid #d92a4b');
+            }
+        });
+
+        var pswReg = /^[\x21-\x7E]{6,20}$/;
+        $('.password').blur(function(){
+            if(pswReg.test($(this).val())){
+                $(this).css('border','1px solid #ddd');
+            }else{
+                $(this).css('border','1px solid #d92a4b');
+            }
+        });        
+
+        $('.password2').blur(function(){
+            if($(this).val() == $('.password').val() && $(this).val()!=""){
+                $(this).css('border','1px solid #ddd');
+                $('.password').removeClass('iserror');
+            }else{
+                $(this).css('border','1px solid #d92a4b');
+                $('.password').addClass('iserror');
+            }   
+        });
+
+        var emailReg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/; 
+        $('.email').blur(function(){
+            if(emailReg.test($(this).val())){
+                 $(this).css('border','1px solid #ddd').removeClass('iserror');
+            }else{
+                $(this).css('border','1px solid #d92a4b').addClass('iserror');
+            }            
+        });
+
+    
+        $('button').on('click',  function(){
+            let length = $('.iserror').length;
+            if(!Boolean(length)){
+                $.ajax({
+                    url: 'http://10.80.7.200:8080/MosselMall/insertUser.action',
+                    type: 'post',
+                    async: true,
+                    data: {
+                        mes_username: $('.username').val(),
+                        mes_password: $('.password').val(),
+                        mes_email: $('.email').val()
+                    },
+                    success: function(res){
+                        if(res === "注册成功"){
+                            // 跳转到首页
+
+                        }else if(res === "注册失败"){
+                            // 刷新页面且提示注册失败
+                        }
+                    }
+                })
+            }
+        });
+    </script>
+</html>

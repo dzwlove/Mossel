@@ -1,0 +1,283 @@
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F4F4F4;
+}
+.header {
+	background-color: white;
+}
+.footer {
+	background-color: white;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+#wineTop {
+	position: relative;
+	left: 50%;
+	top: 0;
+	margin-left: -960px;
+	margin-bottom: -5px;
+}
+#wineContainer>#wineTop>img {
+	width: 1920px;
+	height: 370px;
+}
+
+#wineContainer>#wineContent {
+	width: 1120px;
+	margin: 5px auto;
+}
+
+
+/*已经被选择的*/
+
+#filterSelected {
+	display: none;
+}
+
+
+/*过滤器列表*/
+
+#filterLists {
+	width: 1120px;
+	height: 100%;
+	background-color: #F4F4F4;
+}
+
+.filterList {
+	height: 50px;
+	margin-top: 1px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 50px;
+	background-color: white;
+}
+
+
+/*过滤器标签*/
+
+.filterLable {
+	margin-left: 18px;
+	width: 42px;
+	color: #999;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/*过滤器内容*/
+
+.filterValue {
+	margin-left: 10px;
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.filterValue a {
+	color: #666;
+}
+.filterValue span {
+	text-align: center;
+	height: 30px;
+	width: 38px;
+	padding: 5px 5px 5px 5px;
+}
+
+.filterValue a:hover {
+	color: #D92A4B;
+}
+
+
+/*点击样式变化*/
+
+.rSelected {
+	background-color: #D92A4B;
+}
+
+.rSelected a {
+	color: white;
+}
+
+.rSelected a:hover {
+	color: white;
+}
+
+
+/*sort*/
+
+#proSort {
+	width: 1120px;
+	height: 37px;
+	padding: 10px 0 10px 0;
+	font-size: 14px;
+	margin: 0;
+}
+
+#proSort ul {
+	padding-left: 0px;
+}
+
+#proSort li {
+	list-style: none;
+	float: left;
+	width: 42px;
+	padding: 0 20px 0 20px;
+}
+
+#proSort li em {
+	float: left;
+}
+
+#proSort li .asc {
+	display: none;
+}
+
+#proSort li em {
+	font-style: normal;
+}
+
+
+/*卡片主体*/
+#showList{
+	width: 1120px;
+	margin-top: -25px;
+}
+#showList ul{
+	padding-left: 0px;
+	width: 1120px;
+	
+}
+/*很多个*/
+#showList .pic{
+	overflow: hidden;
+}
+#showList .pic img{
+	width: 265px;
+	height: 265px;
+	transition: all 2s;
+}
+#showList .pic:hover img{
+	transform: scale(1.1,1.1);
+}
+#showList li{
+	width: 265px;
+	height: 444px;
+	list-style: none;
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 8px;
+	margin-top: 15px;
+}
+#showList .picSmall{
+	width: 265px;
+	height: 42px;
+	/*background-color: blue;*/
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+#showList .picSmall div{
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	border: 1px solid transparent;
+}
+#showList .picSmall img{
+	width: 40px;
+	height: 40px;
+}
+#showList .picSmall .picSelected{
+	border: 1px solid #d92a4b;
+}
+
+.inf{
+	width: 265px;
+	height: 80px;
+}
+
+.inf p, .inf a{
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+}
+.inf a{
+	color: #333333;
+	line-height: 21px;
+	padding: 5px 10px 0 10px;
+	/*单行超出显示省略号*/
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	display: block;
+} .inf a:hover{
+	color: #d92a4b;
+}
+.inf p:nth-child(2){
+	color: #999999;
+	line-height: 28px;
+	padding: 0 10px 0 10px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+} 
+.inf p:nth-child(3){
+	color: #D92A4B;
+	line-height: 28px;
+	padding: 0 10px 0 10px;
+} 
+.inf p i {
+	font-style: normal;
+	font-size: 16px;
+}
+.notice {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #333333;
+	font-size: 14px;
+	border-top:1px solid #f4f4f4;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	display: none;
+}.notice a:hover{
+	color: #d92a4b;
+}
+.joinCar {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #333333;
+	font-size: 14px;
+	border-top:1px solid #f4f4f4;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	display: none;
+}.joinCar a {
+	color: #d92a4b;
+}
+#showList li:hover{
+	box-shadow: 0 0 10px #ddd
+}
+#showList li:hover .joinCar{
+	display: block;
+}
+#showList li:hover .notice{
+	display: block;
+}
+
+/*noMore*/
+
+.noMore {
+	font-size: 14px;
+	color: #666;
+	line-height: 21px;
+	margin: 15px 0 0;
+	text-align: center;
+}

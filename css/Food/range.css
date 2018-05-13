@@ -1,0 +1,68 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	    background: #f4f4f4;
+}
+.range_head{
+	width: 1120px;
+	height: 40px;
+    margin: 10px auto;
+    line-height: 2;
+    font: 400 14px/40px microsoft yahei;
+    color: #666;
+}
+.range_now{
+	color: #999;
+}
+.range_main{
+	width: 1120px;
+	height: 1890px;
+	margin: auto;
+}
+
+.range_content{	
+	background-color: white;
+	width: 740px;
+	height: 1840px;
+}.range_content h2{
+	margin: 0;
+	font-size: 28px;
+    color: #333;
+    padding: 20px 0 0 20px;
+    font-weight: 400;
+}.range_date{
+	font-size: 14px;
+	color: #999;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-left: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.range_content p{
+	margin: 0;
+	font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    padding: 0 20px;
+}
+.range_content .range_1{
+	color: #333;
+	font-weight: bold;
+}
+.range_city{
+	width: 609px;
+	height: 846px;
+	font-size: 0;
+	margin-left: 20px;
+}.range_content2{
+	height: 780px;
+	margin-left: 20px;
+}
+.range_content2 .range_padding{
+	margin-left: 20px;
+}
+.range_content2 .range_padding2{
+	margin-left: 40px;
+}

@@ -1,0 +1,228 @@
+html body{
+	padding: 0;
+	margin: 0;
+}
+.food_head {
+	width: 1920px;
+	height: 370px;
+/*	background-color: blue;*/
+}
+.food_head img{
+	width: 1920px;
+	height: 370px;
+}.food_title{
+	padding-top: 1px;
+	width: 1220px;
+	margin: 0 auto;
+	height: 149px;
+	/*background-color: red;*/
+}.food_title h2{
+	margin-top: 50px;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;color: #333;
+	margin-bottom: 0;
+}.food_title h3{
+	width: 132px;
+	height: 1px;
+	background-color: #eee;margin: 4px auto;
+}
+.food_title p{
+	margin-top: 0;
+	font-size: 16px;
+	color: #999;
+	text-align: center;
+}
+/*-------------------------------------------1.进口生鲜--------------------------------------*/
+.food_main1{
+	width: 1220px;
+	height: 1230px;
+	margin: 0 auto;
+	/*background-color: pink;*/
+	padding-top: 1px;
+}.food_main1 ul{
+	list-style-type: none;	
+	padding-left: 0;
+	margin-top: -1px;
+}.food_main1 ul li{
+	width: 290px;
+	height: 410px;
+	float: left;
+	/*background-color: lightblue;*/
+	margin-right: 15px;
+}.food_main1 .food_item{
+	position: relative;
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+	/*background-color: yellowgreen;*/	
+}.food_item .food_top{
+	width: 48px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.food_main1 .food_item .food_img{
+	transition: all 2s; 
+	width: 290px;height: 290px;
+}.food_main1 .food_item_title{
+	width: 290px;height: 24px;
+	text-align: center;
+	margin: 10px 0 0;
+}.food_main1 .food_item_title a{
+	text-decoration: none;
+	color: #333;
+	    
+}.food_main1 p{
+	color: #999;
+	text-align: center;
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.food_main1 .food-title_price{
+	width: 130px;
+	border-top: 1px solid #eee;
+	color: #d92a4b;
+    margin: 10px auto;
+    padding-top: 5px;text-align: center;
+}.food_main1 .food_btnred{
+	width: 290px;height: 40px;
+	background: #cc214a;
+    color: #fff;
+    position: absolute;
+    line-height: 36px;
+    text-align: center;
+    bottom: -40px;
+    transition: all 0.5s; 
+}
+.food_item:hover .food_img{
+	transform: scale(1.1,1.1);	
+}
+.food_item:hover .food_btnred{
+	bottom: 0;
+}
+/*-------------------------------------------2甄选米油--------------------------------------*/
+.food_main2{
+	width: 1220px;
+	height: 820px;
+	margin: 0 auto;
+	padding-top: 1px;
+}.food_main2 ul{
+	list-style-type: none;	
+	padding-left: 0;
+	margin-top: -1px;
+}.food_main2 ul li{
+	width: 290px;
+	height: 410px;
+	float: left;
+	margin-right: 15px;
+}.food_main2 .food_item{
+	position: relative;
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+}.food_item .food_top{
+	width: 48px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.food_main2 .food_item .food_img{
+	transition: all 2s; 
+	width: 290px;height: 290px;
+}.food_main2 .food_item_title{
+	width: 290px;height: 24px;
+	text-align: center;
+	margin: 10px 0 0;
+}.food_main2 .food_item_title a{
+	text-decoration: none;
+	color: #333;
+	    
+}.food_main2 p{
+	color: #999;
+	text-align: center;
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.food_main2 .food-title_price{
+	width: 130px;
+	border-top: 1px solid #eee;
+	color: #d92a4b;
+    margin: 10px auto;
+    padding-top: 5px;text-align: center;
+}.food_main2 .food_btnred{
+	width: 290px;height: 40px;
+	background: #cc214a;
+    color: #fff;
+    position: absolute;
+    line-height: 36px;
+    text-align: center;
+    bottom: -40px;
+    transition: all 0.5s; 
+}
+/*-------------------------------------------3健康食品--------------------------------------*/
+.food_main3{
+	width: 1220px;
+	height: 820px;
+	margin: 0 auto;
+	padding-top: 1px;
+}.food_main3 ul{
+	list-style-type: none;	
+	padding-left: 0;
+	margin-top: -1px;
+}.food_main3 ul li{
+	width: 290px;
+	height: 410px;
+	float: left;
+	margin-right: 15px;
+}.food_main3 .food_item{
+	position: relative;
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+}
+.food_item .food_top{
+	width: 48px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.food_main3 .food_item .food_img{
+	transition: all 2s; 
+	width: 290px;height: 290px;
+}.food_main3 .food_item_title{
+	width: 290px;height: 24px;
+	text-align: center;
+	margin: 10px 0 0;
+}.food_main3 .food_item_title a{
+	text-decoration: none;
+	color: #333;
+	    
+}.food_main3 p{
+	color: #999;
+	text-align: center;
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.food_main3 .food-title_price{
+	width: 130px;
+	border-top: 1px solid #eee;
+	color: #d92a4b;
+    margin: 10px auto;
+    padding-top: 5px;text-align: center;
+}.food_main3 .food_btnred{
+	width: 290px;height: 40px;
+	background: #cc214a;
+    color: #fff;
+    position: absolute;
+    line-height: 36px;
+    text-align: center;
+    bottom: -40px;
+    transition: all 0.5s; 
+}

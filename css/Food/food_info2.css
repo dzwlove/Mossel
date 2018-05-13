@@ -1,0 +1,10 @@
+.food_info_main2{
+	width: 100%;
+	margin: auto;
+	font-size: 0;
+}.food_info_main2 img{
+	width: 100%;
+}
+.g{
+	border:0.5px solid lightgray;
+}

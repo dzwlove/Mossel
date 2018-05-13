@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>忘记密码</title>
+		<link rel="stylesheet" type="text/css" href="../css/Food/forgetPwd.css" />
+		<link rel="stylesheet" href="../css/common/less.css">
+	</head>
+
+	<body>
+		<div class="forget_header">
+			<h1><a href=""><img src="../img/Food/forget_head.png"/></a></h1>
+		</div>
+		<div class="forget_wrap">
+			<div class="forget_main">
+				<ul>
+					<li>
+						<span class="f_num f_red">1</span>
+						<span class="f_test f_red">填写账户名</span>
+					</li>
+					<li>
+						<span class="f_num">2</span>
+						<span class="f_test">身份验证</span>
+					</li>
+					<li>
+						<span class="f_num">3</span>
+						<span class="f_test">设置新密码</span>
+					</li>
+					<li>
+						<span class="f_num f_num4">4</span>
+						<span class="f_test">完成</span>
+					</li>
+				</ul>
+				<div class="forget_main2">
+					<input type="text" name="" id="forget_input" value="" placeholder="请填写用户名或邮箱" />
+					<div class="f_label"><label>！请填写正确的信息</label></div>
+					<button class="forget_next">下一步</button>
+					<p><span>记起密码?</span>
+						<a href="">登录</a>
+					</p>
+				</div>
+
+			</div>
+			
+		</div>
+		<div class="forget_box">
+			<div class="forget_win">
+				<p>密码重置成功 请登录</p>
+				<button class="f_ok">确定</button>
+			</div>
+		</div>		
+		<div class="footer">
+			<div class="footerBottom">
+				<div class="net-copyright">
+					<div class="links">
+						<a href="">关于莫塞尔</a> |
+						<a href="">配送范围与运费</a> |
+						<a href="">快递查询</a> |
+						<a href="">联系我们</a>
+					</div>
+					<p>copyright ©2018 华为技术有限公司版权所有 |
+						<a href="">粤A2-20044005号-13</a>
+					</p>
+					<div class="gov-icon">
+						<a href="" class="police"></a>
+						<a href="" class="icp"></a>
+						<a href="" class="aw"></a>
+						<a href="" class="gswj"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#forget_input").focus(function() {
+			$("#forget_input").css("outline", "#6bb305 solid 1px");
+		});
+		$("#forget_input").blur(function() {
+			$("#forget_input").css("outline", "none");
+		});
+
+		//---------------------点击下一步-----------------
+
+		$(".forget_next").on("click", function() {
+			var count = 0;
+			for(var i = 0; i < $(".f_num").length; i++) {
+				if($(".f_num").eq(i).hasClass("f_red")) {
+					count++;
+				}
+			}
+			if(count == 1) {
+				if($("#forget_input").val() != "") {
+					$(".f_label label").css("display", "none");
+					$(".f_num").eq(1).addClass("f_red");
+					$(".f_test").eq(1).addClass("f_red");
+					$("#forget_input").val("");
+					$("#forget_input").attr('placeholder',"请输入发送验证码");
+				} else {
+					$(".f_label label").css("display", "block");
+				}
+			} else if(count == 2) {
+				if($("#forget_input").val() != "") {
+					$(".f_label label").css("display", "none");
+					$(".f_num").eq(2).addClass("f_red");
+					$(".f_test").eq(2).addClass("f_red");
+					$("#forget_input").val("");
+					$("#forget_input").attr('placeholder',"请设置新密码");
+				} else {
+					$(".f_label label").css("display", "block");
+				}
+			} else if(count == 3) {
+				if($("#forget_input").val() != "") {
+					$(".f_label label").css("display", "none");
+					$(".f_num4").addClass("f_green");
+					$(".f_test").addClass("f_red");
+					$(".forget_box").css("display","block");	
+					$("#forget_input").val("");
+				} else {
+					$(".f_label label").css("display", "block");
+				}
+			} else {
+				
+			}
+		})
+		
+		//点击确定-跳登录页面
+		$(".f_ok").on("click",function(){
+			$(".forget_box").css("display","none");
+		})
+	</script>
+
+</html>
