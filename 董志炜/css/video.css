@@ -1,0 +1,177 @@
+
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*一级*/
+			.video_wrap{
+				width: 100%;
+				margin-bottom: 50px;
+				/*height: 2000px;*/
+				/*background: red;*/
+			}
+			/*二级*/
+			.video_display{
+				/*background: green;*/
+				width: 1245px;
+				height: 1340px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.video_cookwrap{
+				width: 1245px;
+				height: 36px;
+				padding: 50px 0 30px;
+				/*background: red;*/
+				margin: 0 auto;
+			}
+			/*三级*/
+			.video_item{
+				width: 390px;
+				height: 430px;
+				margin-right: 25px;
+				margin-bottom: 25px;
+				float: left;
+				background: rgb(249,249,249);
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.video_word{
+				/*border-radius: 0 0 60px 0;*/
+			}
+			.video_video{
+				
+			}
+			.video_cook{
+				font-size: 24px;
+				font-weight: 400;
+				color: black;
+			}
+			.video_deli,.video_more{
+				color: gray;
+				font-size: 16px;
+			}
+			.video_more{
+				padding-left: 825px;
+			}
+			/*四级*/
+			.video_word>p{
+				color: gray;
+				margin-left: 70px;
+				margin-bottom: 10px;
+			}
+			.video_word .video_first{
+				font-size: 26px;
+				font-weight: 400;
+				padding-top: 50px;
+				color: black;
+			}
+			.video_word .video_second{
+				margin-left: 120px;
+			}
+			.video_triangle1{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 0px;
+				width: 0px;
+				border-right: 40px solid transparent;
+				border-bottom: 40px solid transparent;
+				border-bottom: 40px solid rgb(244,244,244);
+				transform: rotate(90deg);
+			}
+			.video_triangle2{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 0px;
+				width: 0px;
+				border-right: 40px solid transparent;
+				border-bottom: 40px solid transparent;
+				border-bottom: 40px solid white;
+				transform: rotate(270deg);
+			}
+			.video_item .video_vege,.video_bg{
+				width: 390px;
+				height: 250px;
+			}
+			.video_bg{
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: transparent;
+			}
+			
+			.video_bg img{
+				width: 54px;
+				height: 54px;
+				position: absolute;
+				left: 168px;
+				top: 98px;
+				cursor: hand;
+			}
+			.video_none{
+				display: none;
+			}
+			.video_bg:hover .video_none{
+				display: block;
+			}
+			.video_item>.video_button{
+				width: 100%;
+				height: 40px;
+				font-size: 14px;
+				background: rgb(244,244,244);
+				line-height: 40px;
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				color: gray;
+			}
+			.video_button:hover{
+				color: red;
+			}
+			.video_left{
+				left: 0;
+			}
+			.video_right{
+				right: 0;
+			}
+			.video_vegename{
+				font-size: 18px;
+				padding: 10px 20px;
+				color: black;
+			}
+			.video_vegeintr{
+				color: gray;
+				font-size: 14px;
+				padding: 0 20px;
+				height: 88px;
+			}
+			.video_opci{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+				z-index: 100;
+			}
+			.video_opci>div{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				width: 1024px;
+				height: 576px;
+			}
+			.video_opci img{
+				z-index: 105;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+			}
+			video{
+				width: 1024px;
+				height: 576px;	
+			}

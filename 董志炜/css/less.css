@@ -1,0 +1,414 @@
+body,html{
+  margin: 0;
+  height: 100%;
+}
+* {
+  /*font-size: 0px;*/
+}
+li{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 18px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.header{
+  background-color: white;
+}
+.headerWrap{
+  background-color: #f4f4f4;
+}
+.headTop {
+  margin: 0 auto;
+  width: 1120px;
+  height: 24px;
+  padding-top: 12px;
+  background-color: #f4f4f4;
+}
+.headTop .headLeft {
+  width: 500px;
+  float: left;
+}
+.headTop .headLeft img {
+  width: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.headTop .headLeft a {
+  font-size: 13px;
+  vertical-align: middle;
+}
+.headTop .headLeft a:hover {
+  color: #d92a4b;
+}
+.headTop .headRight {
+  float: right;
+}
+.headTop .headRight a {
+  display: inline-block;
+  padding: 0 7px 0 2px;
+  color: #666;
+  margin: 0 3px;
+  font-size: 13px;
+  line-height: 13px;
+}
+.headTop .headRight a:hover {
+  color: #d92a4b;
+}
+.headTop .headRight .sep {
+  border-right: 1px solid #ddd;
+}
+.headTop .headRight .hide-code {
+  position: relative;
+}
+.headTop .headRight .hide-code .hideCode {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 24px;
+  right: -35px;
+  display: none;
+  z-index: 20;
+}
+.headMiddle {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 82px;
+}
+.headMiddle form {
+  float: right;
+  position: relative;
+  margin-top: 20px;
+  width: 296px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px gray solid;
+}
+.headMiddle form input {
+  width: 227px;
+  border: 0;
+  position: absolute;
+  top: 3px;
+  left: 17px;
+  padding: 12px 5px;
+  background: 0 0;
+  font-size: 12px;
+  outline: none;
+}
+.headMiddle form .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.headNav {
+  height: 44px;
+  border-bottom: 2px solid #333;
+  position: relative;
+}
+.headNav ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 1150px;
+}
+.headNav ul li {
+  list-style-type: none;
+  float: left;
+  padding: 0 25px;
+  text-align: center;
+}
+.headNav ul li .Nav {
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 43px;
+  font-size: 16px;
+}
+.headNav ul li .Nav:hover {
+  border-bottom: 2px red solid;
+}
+.headNav ul li .NavWrap {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 46px;
+  left: 0;
+  z-index: 30;
+  display: none;
+}
+.headNav ul li .NavWrap .headNavLiquor {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL {
+  float: left;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL h3 {
+  border-bottom: 1px solid #eee;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL p {
+  padding-left: 48px;
+  position: relative;
+  text-align: left;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL p a {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+  padding: 0 9px;
+  vertical-align: top;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL p a:hover {
+  color: #d92a4b;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavL p .icon {
+  width: 48px;
+  height: 48px;
+  color: #c9b191;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavR {
+  float: right;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavR h3 {
+  border-bottom: 1px solid #eee;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavR a {
+  font-size: 14px;
+  color: #666;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavR a .icon {
+  color: #c9b191;
+  font-size: 48px;
+}
+.headNav ul li .NavWrap .headNavLiquor .headNavR a:hover {
+  color: #d92a4b;
+}
+.headNav ul li .NavWrap .headNavFood {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.headNav ul li .NavWrap .headNavFood a {
+  float: left;
+  margin: 0 20px;
+  text-align: center;
+  line-height: 26px;
+}
+.headNav ul li .NavWrap .headNavFood a .icon {
+  font-size: 54px;
+  color: #c9b191;
+}
+.headNav ul li .NavWrap .headNavFood a span {
+  display: block;
+  font-size: 14px;
+}
+.headNav ul li .NavWrap .headNavFood a span:hover {
+  color: #d92a4b;
+}
+.headNav ul li:hover .NavWrap {
+  display: block;
+  box-shadow: 0 0 5px #ddd;
+}
+.footer {
+  height: 385px;
+  background-color: white;
+}
+.footer .container {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 36px 0;
+}
+.footer .container ul {
+  float: left;
+  margin-right: 90px;
+  padding: 0;
+}
+.footer .container ul .footerTitle {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  width: 58px;
+  margin-bottom: 5px;
+}
+.footer .container ul .footerTitle a {
+  color: #333;
+  font-size: 14px;
+}
+.footer .container ul .footerTitle a:hover {
+  color: #d92a4b;
+}
+.footer .container ul .footerItem a {
+  line-height: 30px;
+  color: #999;
+  font-size: 14px;
+}
+.footer .container ul .footerItem a:hover {
+  color: #d92a4b;
+}
+.footer .container .server {
+  float: right;
+}
+.footer .container .server span {
+  color: #666!important;
+  font-size: 14px;
+}
+.footer .container .server h2 {
+  margin: 15px 0;
+  font: 400 30px Arial;
+  color: #666;
+  font-size: 30px;
+}
+.footer .footerBottom {
+  background-color: #000;
+}
+.footer .footerBottom .net-copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .footerBottom .net-copyright .links {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.footer .footerBottom .net-copyright .links a {
+  color: #999;
+  margin: 0 4px;
+  font-size: 14px;
+}
+.footer .footerBottom .net-copyright .links a:hover {
+  color: #d92a4b;
+}
+.footer .footerBottom .net-copyright p {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 6px 0;
+}
+.footer .footerBottom .net-copyright p a {
+  font-size: 14px;
+  color: #999;
+}
+.footer .footerBottom .net-copyright .gov-icon {
+  margin-top: 20px;
+}
+.footer .footerBottom .net-copyright .gov-icon a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: url(../img/download.png);
+}
+.footer .footerBottom .net-copyright .gov-icon .police {
+  background-position: 0 -120px;
+}
+.footer .footerBottom .net-copyright .gov-icon .icp {
+  background-position: 0 -80px;
+}
+.footer .footerBottom .net-copyright .gov-icon .aw {
+  background-position: 0 0;
+}
+.footer .footerBottom .net-copyright .gov-icon .gswj {
+  background-position: 0 -40px;
+}
+.siderbar {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+  border: 1px solid #eee;
+  background-color: white;
+}
+.siderbar li {
+  list-style-type: none;
+  width: 40px;
+  text-align: center;
+}
+.siderbar li img {
+  width: 40px;
+}
+.siderbar .svg {
+  height: 45px;
+  line-height: 55px;
+  position: relative;
+}
+.siderbar .svg svg {
+  font-size: 20px;
+}
+.siderbar .svg p {
+  position: absolute;
+  top: -14px;
+  left: -110px;
+  padding: 10px;
+  width: 80px;
+  color: #d92a4b;
+  background: #fff;
+  border: 1px solid #eee;
+  display: none;
+}
+.siderbar .svg p span {
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+}
+.siderbar .svg p em {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: 1px #eee solid;
+  position: absolute;
+  transform: rotate(45deg) translateY(-50%);
+  color: white;
+  right: -3px;
+  top: 50%;
+  background-color: white;
+  border-color: #eee #eee transparent transparent;
+}
+.siderbar .svg p img {
+  width: 100px;
+}
+.siderbar .svg .svgCode {
+  top: -51px;
+  line-height: 0;
+  width: 100px;
+  left: -132px;
+}
+.siderbar .svg:hover {
+  color: #d92a4b;
+}
+.siderbar .svg:hover p {
+  display: block;
+}
+
+.FOUCS{
+  border: #6bb305 solid 1px;
+}
+.INCORRECT{
+  border: #d92a4b  solid 1px;
+}

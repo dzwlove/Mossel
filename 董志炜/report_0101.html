@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>贺岁好物大赏_莫塞尔商城20180101</title>
+		<link rel="stylesheet" type="text/css" href="css/report_0101.css"/>
+	</head>
+	<body>
+		<div class="report_nav">
+			<a href="#p1">新年好礼</a>
+			<a href="#p2">年度销量top</a>
+			<a href="#p3" style="color: rgb(86,170,181);font-weight: bold;">100%好评</a>
+			<a href="#p4">人气回购</a>
+			<a href="#p5">17年上新</a>
+			<a href="#p6">贺岁臻品</a>
+			<a href="#p7">新年·上新</a>
+		</div>
+		<div class="wrap">
+			<img src="img/logo.jpg" style="width: 308;height: 60px; float: left;"/>
+			<p>
+				<a href="">首页</a>
+				<a href="">美酒</a>
+				<a href="">粮食</a>
+				<a href="">好物</a>
+				<a href="">发现</a>
+				<a href="">专题</a>
+				<a href="">MOSSEL</a>
+			</p>
+		</div>
+		<div class="report_main">
+			<div class="report_p1">
+				<img src="img/pic_flower.png"/>
+				<span class="r_p1_2">00</span>
+				<a target="_blank" href="" class="r_p1_1" title="点击查看"></a>
+			</div>
+			<div class="r_p2" id="p1"></div>
+			<div class="r_p3"></div>
+			<div class="r_p4" id="p2">
+				<a href="" target="_blank" class="p4_1" title="神猎者"></a>
+				<a href="" target="_blank" class="p4_2" title="欧瓦乐城堡"></a>
+				<a href="" target="_blank" class="p4_3" title="魔术师"></a>
+				<a href="" target="_blank" class="p4_4" title="阿根廷进口"></a>
+				<a href="" target="_blank" class="p4_5" title="丹东越光米"></a>
+			</div>
+			<div class="r_p5" id="p3">
+				<a href="" target="_blank" class="p5_1" title="有机五常稻花香"></a>
+				<a href="" target="_blank" class="p5_2" title="纯爱"></a>
+				<a href="" class="p5_3 lose" title="商品下架无法点击"></a>
+				<a href="" target="_blank" class="p5_4" title="BIN88"></a>
+			</div>
+			<div class="r_p6" id="p4">
+				<a href="" target="_blank" class="p6_1" title="伊诺奥塔维"></a>
+				<a href="" target="_blank" class="p6_2" title="莫瑞龙拉加德"></a>
+				<a href="" target="_blank" class="p6_3" title="威尔德斯"></a>
+				<a href="" target="_blank" class="p6_4" title="阿根廷进口"></a>
+			</div>
+			<div class="r_p7" id="p5">
+				<a href="" target="_blank" class="p7_1" title="马丁小车"></a>
+				<a href="" target="_blank" class="p7_2" title="马丁小车"></a>
+				<a href="" class="p7_3 lose" title="商品下架无法点击"></a>
+				<a href="" target="_blank" class="p7_4" title="火山系列"></a>
+			</div>
+			<div class="r_p8">
+				<a href="" target="_blank" class="p8_1" title="52度五粮液"></a>
+				<a href="" target="_blank" class="p8_2" title="油米有礼组合"></a>
+				<a href="" class="p8_3 lose" title="商品下架无法点击"></a>
+				<a href="" target="_blank" class="p8_4" title="莎贝瑞斯"></a>
+				<a href="" target="_blank" class="p8_5" title="伯爵家庭"></a>
+				<a href="" target="_blank" class="p8_6" title="阿根廷进口"></a>
+			</div>
+			<div class="r_p11" id="p7">
+				<a href="" target="_blank" class="p11_1 r_on"><p>点击购买</p></a>
+				<a href="" target="_blank" class="p11_2 r_on"><p>点击购买</p></a>
+				<a href="" target="_blank" class="p11_3 r_on"><p>点击购买</p></a>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var report_nav = document.querySelector(".report_nav");
+		document.onscroll = function(){
+			var num = document.documentElement.scrollTop || document.body.scrollTop;
+			if(num>=926){
+				report_nav.style.display = "block";
+			}else{
+				report_nav.style.display = "none";
+			}
+		}
+		$(".lose").click(function(){
+			return false;
+		})
+	</script>
+</html>

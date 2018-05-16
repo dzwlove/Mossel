@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    		#goods_add{
+    			width: 500px;
+    		}
+    		.container{
+    			padding: 100px;
+    			width: 500px!important;
+    		}
+    </style>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container goods_wrap">
+        <form id="goods_add">
+        		<div class="form-group" style="width: 500px;">
+                <label >商品id</label>
+                <input type="text" id="num" class="form-control">
+            </div>
+            <div class="form-group" style="width: 500px;">
+                <label >商品名称</label>
+                <input type="text" id="g_name" class="form-control">
+            </div>
+            <div class="form-group" style="width: 500px;">
+                <label>商品价格</label>
+                <input type="text" id="g_price" class="form-control">
+            </div>
+            <div class="form-group" style="width: 500px;">
+                <input type="button" id="register" value="确定">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    // setInterval(function () {
+    //     var value = $('input:radio[name="sex"]:checked').val();
+    //     var value = $('#city option:selected').text();
+    //     console.log(value);
+    // },1000)
+    $("#register").on("click",function () {
+        // console.log($("#name").val())
+        $.ajax({
+            type:"post",
+            url:"",
+            data:{
+            		g_id:$("#num").val(),
+                g_name:$("#g_name").val(),
+                g_price:$("#g_price").val()
+            },
+            dataType:"text",
+            success:function (data) {
+                console.log(data);
+//              $("#goods_add").css("display","none");
+//              $("#goods_list").css("display","block");
+                //渲染list
+            }
+        })
+    })
+</script>
+</html>

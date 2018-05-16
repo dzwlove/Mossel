@@ -1,0 +1,205 @@
+
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap{
+				width: 1120px;
+				height: 60px;
+				/*background: red;*/
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.wrap p{
+				float: right;
+				height: 60px;
+				line-height: 60px;
+				/*vertical-align: middle;*/
+			}
+			.wrap p a{
+				padding-left: 30px;
+				text-decoration: none;
+				color: black;
+			}
+			.wrap p a:hover{
+				color: red;
+			}
+			.report_main a{
+				font-size: 18px;
+			    position: absolute;
+			    left: 50%;
+			    text-decoration: none;
+			}
+			.report_p1{
+				height: 464px;
+				position: relative;
+				background: url(../img/bg_01.jpg) 50%;
+			}
+			.report_p1 h2{
+				width: 1000px;
+			    height: 320px;
+			    position: absolute;
+			    top: 125px;
+			    left: 50%;
+			    margin-left: -500px;
+			    font-weight: 400px;
+			}
+			.report_p1 img{
+				position: absolute;
+				/*transition: all .1s;*/
+    				/*left: 50%;*/
+			}
+			.r_p6 .r_boxwrap{
+				width: 1000px;
+				height: 470px;
+				position: absolute;
+    				left: 50%;
+    				top: 190px;
+    				margin-left: -575px;
+    				background: red;
+    				overflow: hidden;
+			}
+			.r_p6 .r_boxwrap .r_box{
+				position: absolute;
+				height: 100%;
+				width: 700%;
+				left: -1000px;
+			}
+			.r_p6 .r_box img{
+				width: 1000px;
+				height: 100%;
+				float: left;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 100px;
+				color: red;
+			}
+			.r_burster{
+				width: 30px;
+				height: 80px;
+				/*background-color: purple;*/
+				position: absolute;
+				font-size: 40px;
+				top: 50%;
+				margin-top: -40px;
+				line-height: 80px;
+				color: red;
+				text-align: center;
+			}
+			.r_right{
+				right: 0px;
+			}
+			.ico_01{
+				top: 125px;
+    				margin-left: -500px;
+    				position: absolute;
+    				left: 50%;
+			}
+			.r_p2{
+				height: 461px;
+				position: relative;
+				background: url(../img/bg_02.jpg) 50%;
+			}
+			.r_p3{
+				height: 470px;
+				position: relative;
+				background: url(../img/bg_03.jpg) 50%;
+			}
+			.m1 {
+			    width: 104px;
+			    height: 38px;
+			    margin-left: 274px;
+			    top: 185px;
+			    background-position: -1643px -49px;
+			    background-image: url(../img/ico1.png);
+    				background-repeat: no-repeat;
+			}
+			.r_p4{
+				height: 1180px;
+				position: relative;
+				background: url(../img/bg_04.jpg) 50%;
+			}
+			.r_p4 a{
+				width: 176px;
+    				height: 55px;
+			}
+			.p4_1{
+				top: 528px;
+    				margin-left: 172px;
+    				background-position: -1249px -392px;
+    				background-image: url(../img/ico1.png);
+    				background-repeat: no-repeat;
+			}
+			.p4_2{
+				top: 1010px;
+    				margin-left: -232px;
+    				background-position: -1249px -392px;
+    				background-image: url(../img/ico1.png);
+    				background-repeat: no-repeat;
+			}
+			.r_p5{
+				height: 1411px;
+				position: relative;
+				background: url(../img/bg_05.jpg) 50%;
+			}
+			.r_p5 a{
+				width: 176px;
+    				height: 55px;
+    				background-position: -1427px -392px;
+    				background-image: url(../img/ico1.png);
+    				background-repeat: no-repeat;
+			}
+			.r_p6 a{
+				width: 176px;
+    				height: 55px;
+    				background-position: -1427px -392px;
+    				background-image: url(../img/ico1.png);
+    				background-repeat: no-repeat;
+			}
+			.p5_1{
+				top: 720px;
+    				margin-left: -436px;
+			}
+			.p5_2{
+				top: 720px;
+    				margin-left: 55px;
+			}
+			.p5_3{
+				top: 1100px;
+    				margin-left: -357px;
+			}
+			.p5_4{
+				top: 1100px;
+    				margin-left: 140px;
+			}			
+			.r_p6{
+				height: 706px;
+				position: relative;
+				background: url(../img/bg_06.jpg) 50%;
+			}
+			.p6_1{
+				left: -60px;
+				top: 510px;
+			}
+			.r_p7{
+				height: 1175px;
+				position: relative;
+				background: url(../img/bg_07.jpg) 50%;
+			}
+			.r_p7 a{
+				width: 155px;
+				height: 47px;
+				top: 400px;
+				background-image: url(../img/ico1.png);
+				background-position: -1605px -392px;
+			}
+			.p7_1{
+    				margin-left: -490px;
+			}
+			.p7_2{
+    				margin-left: -80px;
+			}
+			.p7_3{
+    				margin-left: 330px;
+			}

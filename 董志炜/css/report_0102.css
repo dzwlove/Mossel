@@ -1,0 +1,142 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap{
+				width: 1120px;
+				height: 60px;
+				/*background: red;*/
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.wrap p{
+				float: right;
+				height: 60px;
+				line-height: 60px;
+				/*vertical-align: middle;*/
+			}
+			.wrap p a{
+				padding-left: 30px;
+				text-decoration: none;
+				color: black;
+			}
+			.wrap p a:hover{
+				color: red;
+			}
+			.report_main a{
+				font-size: 18px;
+			    position: absolute;
+			    left: 50%;
+			    text-decoration: none;
+			}
+			.report_p1{
+				height: 609px;
+				position: relative;
+				background: url(../img/bg21.jpg) 50%;
+			}
+			.report_p1 img{
+				position: absolute;
+    				left: 50%;
+			}
+			.ico {
+			    top: 77px;
+			    margin-left: -278px;
+			    transition: all 2s;
+			}
+			.ico_01{
+				top: 66px;
+    				margin-left: 318px;
+			}
+			.ico_03 {
+			    top: 79px;
+			    margin-left: -644px;
+			}
+			.r_p2{
+				height: 369px;
+				position: relative;
+				background: url(../img/bg12.jpg) 50%;
+			}
+			.r_p3{
+				height: 907px;
+				position: relative;
+				background: url(../img/bg13.jpg) 50%;
+			}
+			.m1 {
+			    margin-left: -570px;
+			    top: 220px;
+			}
+			.m2 {
+			    margin-left: 80px;
+			    top: 220px;
+			}
+			.min {
+			    width: 480px;
+			    height: 600px;
+			}
+			.r_p4{
+				height: 783px;
+				position: relative;
+				background: url(../img/bg14.jpg) 50%;
+			}
+			.max{
+			    width: 290px;
+			    height: 390px;
+			}
+			.p4_1{
+				margin-left: -600px;
+				top: 269px;
+			}
+			.p4_2{
+				margin-left: -297px;
+    				top: 269px;
+			}
+			.p4_3{
+				margin-left: 7px;
+    				top: 269px;
+			}
+			.p4_4{
+				margin-left: 310px;
+   				top: 269px;
+			}
+			.r_p5{
+				height: 667px;
+				position: relative;
+				background: url(../img/bg15.jpg) 50%;
+			}
+			.p5_1{
+				width: 875px;
+			    height: 300px;
+			    top: 282px;
+			    margin-left: -340px;
+			}
+			.r_p6{
+				height: 982px;
+				position: relative;
+				background: url(../img/bg16.jpg) 50%;
+			}
+			.m8{
+			    top: 285px;
+			    margin-left: -540px;
+			}
+			.m9 {
+			    top: 285px;
+			    margin-left: 85px;
+			}
+			.r_p7{
+				height: 923px;
+				position: relative;
+				background: url(../img/bg17.jpg) 50%;
+			}
+			.p7_1{
+				top: 295px;
+    				margin-left: -540px;
+			}
+			.p7_2{
+				top: 295px;
+    				margin-left: 85px;
+			}
+			.r_p8{
+				height: 542px;
+				position: relative;
+				background: url(../img/bg18.jpg) 50%;
+			}

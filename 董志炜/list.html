@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<style type="text/css">
+		#goods_list{
+			border: 1px rgb(232,232,232) solid;
+		}
+		#goods_list th,td{
+			width: 100px;
+			height: 35px;
+			overflow: hidden;
+		    line-height: 35px;
+		    border: 1px rgb(232,232,232) solid;
+		    text-align: center;
+		}
+		.goods_head{
+			background: rgb(228,256,253);
+		}
+		.goods_big{
+			width: 400px;
+		}
+		.goods_page{
+			width: 800px;
+		}
+		.goods_add{
+			width: 500px;
+		}
+		.container{
+			width: 500px!important;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<table border="1" cellspacing="0" cellpadding="0" id="goods_list">
+				<tr>
+					<th class="goods_head">g_id</th>
+					<th class="goods_head" class="goods_big">商品名称</th>
+					<th class="goods_head">商品价格</th>
+					<th class="goods_head">修改</th>
+					<th class="goods_head">删除</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td class="goods_big">豆腐</td>
+					<td>10</td>
+					<td class="update">修改</td>
+					<td class="delete" num="1">删除1</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td class="goods_big">红烧肉</td>
+					<td>30</td>
+					<td class="update">修改</td>
+					<td class="delete" num="2">删除2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="goods_big">腐竹</td>
+					<td>15</td>
+					<td class="update">修改</td>
+					<td class="delete" num="3">删除3</td>
+				</tr>
+				<tr>
+					<td  class="list_first">第一页</td>
+					<td class="list_prev">上一页</td>
+					<td class="list_next">下一页</td>
+					<td class="list_last">末尾页</td>
+				</tr>
+			</table>
+			<form id="goods_add" style="display: none;">
+				<div class="form-group" style="width: 500px;">
+	                <label >商品id</label>
+	                <input type="text" id="g_id" class="form-control">
+	            </div>
+	            <div class="form-group" style="width: 500px;">
+	                <label >商品名称</label>
+	                <input type="text" id="name" class="form-control">
+	            </div>
+	            <div class="form-group" style="width: 500px;">
+	                <label>商品价格</label>
+	                <input type="text" id="price" class="form-control">
+	            </div>
+	            <div class="form-group" style="width: 500px;">
+	                <input type="button" id="register" value="确定">
+	            </div>
+	        </form>
+		</div>
+		
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var page = 1;
+		$(".list_first").click(function(){
+			page = 1;
+			$.ajax({
+				type:"post",
+				url:"",
+				data:{
+					page:page
+				},
+				asycn:true,
+				dataType:"json",
+	//			contentType:false,
+	//			processData:false,
+				success:function(data){
+					//渲染时记得在删除按钮处添加num自定义属性
+				}
+			});
+		})
+		$(".list_last").click(function(){
+			page = 1;
+			$.ajax({
+				type:"post",
+				url:"",
+				data:{
+					page:page
+				},
+				asycn:true,
+				dataType:"json",
+	//			contentType:false,
+	//			processData:false,
+				success:function(data){
+					//渲染时记得在删除按钮处添加num自定义属性
+				}
+			});
+		})
+		$(".list_prev").click(function(){
+			page--;
+			$.ajax({
+				type:"post",
+				url:"",
+				data:{
+					page:page
+				},
+				asycn:true,
+				dataType:"json",
+	//			contentType:false,
+	//			processData:false,
+				success:function(data){
+					//渲染时记得在删除按钮处添加num自定义属性
+				}
+			});
+		})
+		$(".list_first").click(function(){
+			page++;
+			$.ajax({
+				type:"post",
+				url:"",
+				data:{
+					page:page
+				},
+				asycn:true,
+				dataType:"json",
+	//			contentType:false,
+	//			processData:false,
+				success:function(data){
+					//渲染时记得在删除按钮处添加num自定义属性
+				}
+			});
+		})
+		$(".delete").each(function(a,ele){
+			var _this = $(this);
+			$(this).click(function(){
+//				console.log($(this).html());
+//				console.log($(this).attr("num"));
+//				$(this).parent().remove()
+				$.ajax({
+					type:"post",
+					url:"",
+					data:{
+						page:page,
+						g_id:_this.attr("num")
+					},
+					asycn:true,
+					dataType:"json",
+//					contentType:false,
+//					processData:false,
+					success:function(data){
+						//渲染时记得在删除按钮处添加num自定义属性
+					}
+				});
+			})
+		});
+		$(".update").each(function(a,ele){
+			var _this = $(this);
+			$(this).click(function(){
+				$("#goods_add").css("display","block");
+				var g_id = $("#g_id").val($(this).prev().prev().prev().html());
+				var g_name = $("#name").val($(this).prev().prev().html());
+				var g_price = $("#price").val($(this).prev().html());
+				$("#goods_list").css("display","none");
+				$("#register").on("click",function () {
+		        // console.log($("#name").val())
+//		        		$.ajax({
+//						type:"post",
+//						url:"",
+//						data:{
+//							g_id:g_id,
+//							g_name:g_name,
+//							g_price:g_price
+//						},
+//						asycn:true,
+//						dataType:"json",
+//			//			contentType:false,
+//			//			processData:false,
+//						success:function(data){
+//							
+//						}
+//					});
+		    		})
+			})
+		});
+		
+		
+//		$.ajax({
+//			type:"post",
+//			url:"",
+//			data:{
+//				page:page
+//			},
+//			asycn:true,
+//			dataType:"json",
+////			contentType:false,
+////			processData:false,
+//			success:function(data){
+//				//渲染时记得在删除按钮处添加num自定义属性
+//			}
+//		});
+	</script>
+</html>
